@@ -1,0 +1,348 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	font-family: "Raleway", sans-serif;
+}
+
+/**************/
+/******NAV*****/
+/**************/
+
+nav a {
+	text-decoration: none;
+	color: #F0F0F0;
+}
+
+nav {
+	color: #F0F0F0;
+	z-index: 100;
+	height: 50px;
+	width: 100%;
+	background-color: #303030;
+	position: fixed;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+nav ul li:last-of-type {
+	margin-right: 0;
+}
+
+/**************/
+/****HEADER****/
+/**************/
+
+.bg-1 {
+	background-attachment: fixed !important;
+	background: url(../img/Contrast_red_bg.png) 0 0 repeat;
+	background-position: center center !important;
+	background-size: cover;
+	-webkit-background-size: cover;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	z-index: 50;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.header-text {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	text-align: center;
+	z-index: 100;
+	color: #fff;
+}
+
+.header-text h1, .header-text h3 {
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 90px;
+	margin: 0 auto;
+	border-top: 6px solid #fff;
+	display: inline-block;
+	margin-top: 100px;
+	padding-top: 40px;
+}
+
+.header-text h3 {
+	font-size: 50px;
+	border: 0;
+	margin-top: 0;
+}
+
+/**************/
+/****ABOUT*****/
+/**************/
+
+#about {
+	background-color: #303030;
+	width: 100%;
+	color: #F0F0F0;
+	padding: 40px;
+}
+
+.about-wrapper {
+	border-right: 2px solid #fff;
+	width: 67%;
+	padding-right: 40px;
+	float: left;
+}
+
+#about p {
+	font-size: 18px;
+}
+
+.logo-wrapper {
+	width: 33%;
+	text-align: center;
+	float: right;
+}
+
+/**************/
+/*****DOCS*****/
+/**************/
+
+#docs {
+	background-color: #fff;
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+.hex-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 90;
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+	background: url(../img/staticmap.png);
+	background-position: center;
+	background-size: cover;
+		-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.hex-wrapper-text {
+	z-index: 91;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	padding-top: 200px;
+	background-color: rgba(255,255,255,0.3);
+	height: 100%;
+}
+
+.hex-wrapper-text p {
+	color: #000;
+	font-size: 48px;
+	margin: 40px;
+}
+
+.hex-text {
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	font-size: 24px;
+	z-index: 101;
+	text-align: center;
+	border: 2px solid red;
+	padding: 20px;
+	width: 20%;
+	margin: auto;
+	text-decoration: none;
+	display: block;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.hex-text:hover,
+.hex-text:focus {
+	color: #333333;
+	background-color: rgba(255,255,255,0.6);
+}
+
+/**************/
+/*****DEMOS****/
+/**************/
+
+#demos {
+	background-color: 
+}
+
+
+/**************/
+/***DOWNLOAD***/
+/**************/
+
+#downloads {
+	padding: 40px;
+}
+
+.man,
+.rtm,
+.pub {
+	background: url(../img/manuals.png);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	-webkit-transition: background 0.3s ease-out;
+  -moz-transition: background 0.3s ease-out;
+  -o-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+.rtm {
+	background: url(../img/download.png);
+	background-size: 100px 100px
+}
+
+.pub {
+	background: url(../img/publications.png);
+	background-size: 100px 100px
+}
+
+.man:hover,
+.man:focus {
+	background: url('../img/manuals-red.png');
+	background-size: 100px 100px
+}
+
+.rtm:hover,
+.rtm:focus {
+	background: url('../img/download-red.png');
+	background-size: 100px 100px
+}
+
+.pub:hover,
+.pub:focus {
+	background: url('../img/publications-red.png');
+	background-size: 100px 100px
+}
+
+.rtmdx,
+.manuals {
+	border-right: 2px solid #000;
+}
+
+.rtmdx a,
+.manuals a,
+.publications a {
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 100%;
+}
+
+.rtmdx a:hover,
+.rtmdx a:focus,
+.manuals a:hover,
+.manuals a:focus,
+.publications a:hover,
+.publications a:focus {
+	color: red;
+}
+
+.icon {
+	display: block;
+	margin: 40px auto;
+}
+
+/**************/
+/***BUTTONS****/
+/**************/
+
+.button-wrapper {
+	margin: 60px auto 0;
+}
+
+.get-started,
+.download {
+	border: 1px solid #fff;
+	color: #fff;
+	width: 200px;
+	padding: 20px;
+	display: inline-block;
+	margin-right: 40px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.get-started:hover,
+.get-started:focus,
+.download:hover,
+.download:focus {
+	background-color: rgba(255,255,255,0.3);
+}
+
+/**************/
+/*****GRID*****/
+/**************/
+
+
+.half-page,
+.third-page,
+.quart-page {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+
+.third-page {
+	width: 33%;
+}
+
+.quart-page {
+	width: 25%;
+}
