@@ -30,22 +30,34 @@ nav a {
 
 nav {
 	color: #F0F0F0;
-	z-index: 100;
-	height: 50px;
+	z-index: 105;
 	width: 100%;
 	background-color: #303030;
 	position: fixed;
+	margin: 0 auto;
+	text-align: center;
 }
 
 nav ul {
+	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
 	display: inline-block;
-	padding: 10px;
+}
+
+nav ul li a {
+	padding: 15px;
 	margin-right: 20px;
 	font-size: 18px;
+	display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background-color: #D20000;
 }
 
 nav ul li:last-of-type {
@@ -113,7 +125,8 @@ nav ul li:last-of-type {
 	background-color: #303030;
 	width: 100%;
 	color: #F0F0F0;
-	padding: 40px;
+	padding: 80px 40px;
+	height: 600px;
 }
 
 .about-wrapper {
@@ -182,36 +195,35 @@ nav ul li:last-of-type {
 	margin: 40px;
 }
 
-.hex-text {
-	background-color: rgba(255,255,255,0.8);
-	color: #000;
-	font-size: 24px;
-	z-index: 101;
-	text-align: center;
-	border: 2px solid red;
-	padding: 20px;
-	width: 20%;
-	margin: auto;
-	text-decoration: none;
-	display: block;
-	-webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.hex-text:hover,
-.hex-text:focus {
-	color: #333333;
-	background-color: rgba(255,255,255,0.6);
-}
-
 /**************/
 /*****DEMOS****/
 /**************/
 
 #demos {
-	background-color: 
+	background-color: #FFF;
+	padding: 40px;
+	height: 600px;
+}
+
+.demos-text {
+	float: left;
+}
+
+.demos-text h2 {
+	margin: 0 0 40px 0;
+	text-align: left;
+}
+
+.demos-text p {
+	text-align: left;
+	font-size: 18px;
+}
+
+#demos iframe {
+	float: right;
+	margin-top: 60px;
+	width: 700px; 
+	height: 394px;
 }
 
 
@@ -221,6 +233,13 @@ nav ul li:last-of-type {
 
 #downloads {
 	padding: 40px;
+	height: 600px;
+}
+
+#downloads p {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 60px;
 }
 
 .man,
@@ -264,7 +283,7 @@ nav ul li:last-of-type {
 	background-size: 100px 100px
 }
 
-.rtmdx,
+.publications,
 .manuals {
 	border-right: 2px solid #000;
 }
@@ -297,6 +316,119 @@ nav ul li:last-of-type {
 }
 
 /**************/
+/***PRACTICE***/
+/**************/
+
+#in-practice {
+	padding: 40px;
+	background-image: url('../img/Contrast_blue_bg.png');
+	background-size: cover;
+	background-position: center;
+	color: #F0F0F0;
+}
+
+#in-practice .quart-page img {
+	max-height: 200px;
+	width: auto;
+	margin: auto;
+}
+
+#in-practice div {
+	padding-top: 40px;
+	background-color: rgba(255,255,255,0.4);
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+#in-practice div:hover,
+#in-practice div:focus {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/**************/
+/**SUPPORTERS**/
+/**************/
+
+#supporters {
+	width: 100%;
+	background-color: #F0F0F0;
+	padding: 10px;
+}
+
+.supporters-wrapper {
+	width: 100%;
+	background-color: #FFF;
+}
+
+#supporters h4 {
+	float: left;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.supporter {
+	display: inline-block;
+	float: left;
+}
+
+.supporter img {
+	max-width: 50px;
+	max-height: 50px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+}
+
+
+/**************/
+/****CONTACT***/
+/**************/
+
+#contact {
+	height: 100%;
+	background-color: #303030;
+	color: #fff;
+	padding: 40px;
+}
+
+.contact-left {
+	float: left;
+	width: 50%;
+}
+
+.contact-right {
+	float: right;
+	z-index: 92;
+	width: 50%;
+}
+
+.contact-left ul {
+	margin: 0;
+	list-style: none;
+	line-height: 24px;
+	margin-top: 40px;
+}
+
+.contact-left a {
+	color: red;
+	text-decoration: none;
+}
+
+#map_canvas {
+  height: 400px;
+  background-color: #CCC;
+  margin-top: 60px;
+
+}
+
+/**************/
 /***BUTTONS****/
 /**************/
 
@@ -326,10 +458,44 @@ nav ul li:last-of-type {
 	background-color: rgba(255,255,255,0.3);
 }
 
+.red-button {
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	font-size: 24px;
+	z-index: 101;
+	text-align: center;
+	border: 2px solid red;
+	padding: 20px;
+	width: 20%;
+	margin: auto;
+	text-decoration: none;
+	display: block;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.red-button:hover,
+.red-button:focus {
+	color: #333333;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.demo-button {
+	width: 200px;
+	margin-top: 60px;
+}
+
+.demo-button:hover,
+.demo-button:focus {
+	color: #303030;
+	background-color: #F0F0F0;
+}
+
 /**************/
 /*****GRID*****/
 /**************/
-
 
 .half-page,
 .third-page,
@@ -344,5 +510,8 @@ nav ul li:last-of-type {
 }
 
 .quart-page {
-	width: 25%;
+	width: 24%;
+	float: left;
+	min-height: 300px;
+	margin: 0.5%;
 }
