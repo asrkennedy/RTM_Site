@@ -38,5 +38,10 @@ $(document).ready(function(){
    		$(this).css('width','10%');
    })
 
+   $('.contact-right').click(function () {
+   	console.log('happening')
+    $('#map_canvas').css("pointer-events", "auto");
+});
+
 
 })
