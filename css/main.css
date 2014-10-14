@@ -19,6 +19,10 @@ html, body {
 	font-family: "Raleway", sans-serif;
 }
 
+h2 {
+	font-size: 32px;
+}
+
 /**************/
 /******NAV*****/
 /**************/
@@ -36,6 +40,7 @@ nav {
 	position: fixed;
 	margin: 0 auto;
 	text-align: center;
+	top: 0;
 }
 
 nav ul {
@@ -53,10 +58,15 @@ nav ul li a {
 	margin-right: 20px;
 	font-size: 18px;
 	display: inline-block;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 nav ul li a:hover,
-nav ul li a:focus {
+nav ul li a:focus,
+.active {
 	background-color: #D20000;
 }
 
@@ -88,6 +98,7 @@ nav ul li:last-of-type {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 100;
 }
 
 .header-text {
@@ -185,7 +196,7 @@ nav ul li:last-of-type {
 	text-align: center;
 	width: 100%;
 	padding-top: 200px;
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.4);
 	height: 100%;
 }
 
@@ -200,13 +211,28 @@ nav ul li:last-of-type {
 /**************/
 
 #demos {
-	background-color: #FFF;
+	background-color: #303030;
 	padding: 40px;
 	height: 600px;
+	color: #F0F0F0;
 }
 
 .demos-text {
 	float: left;
+}
+
+.demos-text a {
+	color: red;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.demos-text a:hover,
+.demos-text a:focus {
+	color: #BF0000;
 }
 
 .demos-text h2 {
@@ -236,56 +262,61 @@ nav ul li:last-of-type {
 	height: 600px;
 }
 
+#downloads h2 {
+	margin: 0;
+}
+
 #downloads p {
 	text-align: center;
 	font-size: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
+}
+
+#downloads p a {
+	text-decoration: none;
+	color: red;
 }
 
 .man,
 .rtm,
 .pub {
-	background: url(../img/manuals.png);
+	background: url(../img/manuals-red.png);
 	background-size: 100px 100px;
 	width: 100px;
 	height: 100px;
-	-webkit-transition: background 0.3s ease-out;
-  -moz-transition: background 0.3s ease-out;
-  -o-transition: background 0.3s ease-out;
-  transition: background 0.3s ease-out;
 }
 
 .rtm {
-	background: url(../img/download.png);
+	background: url(../img/download-red.png);
 	background-size: 100px 100px
 }
 
 .pub {
-	background: url(../img/publications.png);
-	background-size: 100px 100px
-}
-
-.man:hover,
-.man:focus {
-	background: url('../img/manuals-red.png');
-	background-size: 100px 100px
-}
-
-.rtm:hover,
-.rtm:focus {
-	background: url('../img/download-red.png');
-	background-size: 100px 100px
-}
-
-.pub:hover,
-.pub:focus {
-	background: url('../img/publications-red.png');
+	background: url(../img/publications-red.png);
 	background-size: 100px 100px
 }
 
 .publications,
-.manuals {
+.manuals,
+.rtmdx {
 	border-right: 2px solid #000;
+	-webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.manuals:hover,
+.manuals:focus,
+.rtmdx:hover,
+.rtmdx:focus,
+.publications:hover,
+.publications:focus {
+	background-color: #F0F0F0;
+}
+
+.rtmdx {
+	border: none;
 }
 
 .rtmdx a,
@@ -299,6 +330,7 @@ nav ul li:last-of-type {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   height: 100%;
+  padding-bottom: 20px;
 }
 
 .rtmdx a:hover,
@@ -312,7 +344,7 @@ nav ul li:last-of-type {
 
 .icon {
 	display: block;
-	margin: 40px auto;
+	margin: 30px auto;
 }
 
 /**************/
@@ -325,6 +357,7 @@ nav ul li:last-of-type {
 	background-size: cover;
 	background-position: center;
 	color: #F0F0F0;
+	height: 600px;
 }
 
 #in-practice .quart-page img {
@@ -364,7 +397,7 @@ nav ul li:last-of-type {
 
 .supporters-wrapper {
 	width: 100%;
-	background-color: #FFF;
+	text-align: right;
 }
 
 #supporters h4 {
@@ -375,7 +408,6 @@ nav ul li:last-of-type {
 
 .supporter {
 	display: inline-block;
-	float: left;
 }
 
 .supporter img {
@@ -426,6 +458,56 @@ nav ul li:last-of-type {
   background-color: #CCC;
   margin-top: 60px;
 
+}
+
+/**************/
+/***DOCSPAGE***/
+/**************/
+
+#getting-started {
+	background-color: #303030;
+	height: 600px;
+	padding: 40px;
+	margin: 50px 0 0 0;
+}
+
+#getting-started h2 {
+	color: #FFF;
+	margin-bottom: 60px;
+}
+
+.gst_wrapper img {
+	margin-bottom: 40px;
+	width: 200px;
+	height: 150px;
+}
+
+.gst_wrapper a {
+	width: 50%;
+	text-decoration: none;
+	color: #303030;
+}
+
+.gst_wrapper {
+	width: 33%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	border-right: 2px solid #FFF;
+	padding: 40px 0;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.gst_wrapper:last-of-type {
+	border-right: 0;
+}
+
+.gst_wrapper:hover,
+.gst_wrapper:focus {
+	background-color: rgba(255,0,0,0.5);
 }
 
 /**************/
@@ -485,12 +567,13 @@ nav ul li:last-of-type {
 .demo-button {
 	width: 200px;
 	margin-top: 60px;
+	background-color: rgba(0,0,0,0.2);
 }
 
 .demo-button:hover,
 .demo-button:focus {
 	color: #303030;
-	background-color: #F0F0F0;
+	background-color: rgba(0,0,0,0.3);
 }
 
 /**************/
@@ -507,10 +590,11 @@ nav ul li:last-of-type {
 
 .third-page {
 	width: 33%;
+	padding: 40px 0;
 }
 
 .quart-page {
-	width: 24%;
+	width: 10%;
 	float: left;
 	min-height: 300px;
 	margin: 0.5%;

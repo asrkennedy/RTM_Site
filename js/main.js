@@ -24,13 +24,19 @@ $(document).ready(function(){
       }, 1000);
   }
 
-   $( 'nav ul li a' ).on('click', function(event) {
+   $( 'nav ul li a, .download' ).on('click', function(event) {
       event.preventDefault();
       $('.back_to_top').fadeIn();
       $('.active').removeClass();
       $(this).addClass('active');
       animateScroll(this);
   });
+
+   $('.quart-page').hover(function(){
+   		$(this).css('width','20%');
+   },function(){
+   		$(this).css('width','10%');
+   })
 
 
 })
