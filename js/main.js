@@ -24,7 +24,7 @@ $(document).ready(function(){
       }, 1000);
   }
 
-   $( '#index nav ul li a, .download' ).on('click', function(event) {
+   $( '#index nav ul li a' ).on('click', function(event) {
       event.preventDefault();
       $('.active').removeClass();
       $(this).addClass('active');
@@ -38,7 +38,10 @@ $(document).ready(function(){
    	animateScroll(this);
    })
 
-
+   $('.download').on('click', function(){
+   		animateScroll(this);
+   })
+   		
    $('.quart-page').hover(function(){
    		$(this).css('width','20%');
    },function(){

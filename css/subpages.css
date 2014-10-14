@@ -189,6 +189,16 @@ main article {
 	margin-top: 0;
 }
 
+#training article a {
+	color: red;
+	text-decoration: none;
+}
+
+#training article a:hover,
+#training article a:focus {
+	color: #D20000;
+}
+
 #training article {
 	padding: 0;
 	margin-bottom: 40px;
