@@ -151,6 +151,20 @@ nav ul li:last-of-type {
 	font-size: 18px;
 }
 
+#about a {
+	color: red;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#about a:hover,
+#about a:focus {
+	color: #BF0000;
+}
+
 .logo-wrapper {
 	width: 33%;
 	text-align: center;
@@ -257,22 +271,22 @@ nav ul li:last-of-type {
 /***DOWNLOAD***/
 /**************/
 
-#downloads {
+#resources {
 	padding: 40px;
 	height: 600px;
 }
 
-#downloads h2 {
+#resources h2 {
 	margin: 0;
 }
 
-#downloads p {
+#resources p {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 40px;
 }
 
-#downloads p a {
+#resources p a {
 	text-decoration: none;
 	color: red;
 }
@@ -458,56 +472,6 @@ nav ul li:last-of-type {
   background-color: #CCC;
   margin-top: 60px;
   pointer-events: none;
-}
-
-/**************/
-/***DOCSPAGE***/
-/**************/
-
-#getting-started {
-	background-color: #303030;
-	height: 600px;
-	padding: 40px;
-	margin: 50px 0 0 0;
-}
-
-#getting-started h2 {
-	color: #FFF;
-	margin-bottom: 60px;
-}
-
-.gst_wrapper img {
-	margin-bottom: 40px;
-	width: 200px;
-	height: 150px;
-}
-
-.gst_wrapper a {
-	width: 50%;
-	text-decoration: none;
-	color: #303030;
-}
-
-.gst_wrapper {
-	width: 33%;
-	display: inline-block;
-	float: left;
-	text-align: center;
-	border-right: 2px solid #FFF;
-	padding: 40px 0;
-	-webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.gst_wrapper:last-of-type {
-	border-right: 0;
-}
-
-.gst_wrapper:hover,
-.gst_wrapper:focus {
-	background-color: rgba(255,0,0,0.5);
 }
 
 /**************/

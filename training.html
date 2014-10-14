@@ -15,9 +15,10 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/subpages.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
-    <body>
+    <body id="rtmdx">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -26,11 +27,106 @@
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#docs">Getting Started</a></li>
           <li><a href="index.html#demos">Demos</a></li>
-          <li><a href="index.html#downloads">Downloads</a></li>
+          <li><a href="index.html#resources" class="active">Resources</a></li>
           <li><a href="index.html#in-practice">RTM In Practice</a></li>
-          <li><a href="training.html" class="active">Training</a></li>
           <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="wrapper">
+      <section id="products" class="cf">
+        <h2>We offer two versions of our RTMDx Software:</h2>
+        <div id="rtmdx-left">
+          <a href="https://docs.google.com/forms/d/1VZ6lfbd6HIia-131UdfjEFdOtmOzh2-ULgVGrL8DpDc/viewform"> 
+            <span class="free">$0</span>
+            <h4>Apply for a Free Educational License</h4>
+          </a>
+          <p>Single <a href="http://rutgerscps.weebly.com/uploads/2/7/3/7/27370595/rtmdx_-_end-user_licensing_agreement_nov2013.pdf">end-user license</a> for non-commercial use. Intended for educational and short-term trial purposes. Available to students, educators, and agents of some governmental or non-profit organizations. This version does NOT output maps.</p>
+        </div>
+        <div id="rtmdx-right">
+          <a href="http://rutgerscps.weebly.com/rtm-webinar.html"> 
+            <span class="paid">$650</span>
+            <h4>Professional License with Training Webinar</h4>
+          </a>
+          <p>Comes bundled with the RTM Training Webinar Single end-user license for commercial and professional use. Perpetual license. No maintenance contracts. No recurring fees. This version outputs GeoTiff maps.</p>
+        </div>
+      </section>
+      <a href="#" on-click="return false" data-target="training" class="red-button more-training">More About Training Webinars</a>
+      <section id="training" class="cf">
+        <h2>Our Training Webinars</h2>
+        <section id="recent-webinars" class="cf">
+          <div class="web-wrap cf">
+            <h4>Upcoming Webinars: Early 2015</h4>
+            <a href="https://groups.google.com/forum/#!forum/risk-terrain-modeling" class="red-button register">Register Interest</a>
+          </div>
+          <div class="web-wrap cf">
+            <h4>Last Webinar: July 2014</h4>
+            <a href="http://rutgerscps.weebly.com/uploads/2/7/3/7/27370595/rtmintro_webcast_slides.pdf" class="red-button register">Download Slides</a>
+          </div>
+          <div class="web-wrap cf">
+            <h4>Added Features:</h4>
+            <p>The professional version can also be bundled with customized speaking, training, presentation, or research engagements with Authorized RCPS Associates. <a href="mailto:jcaplan@rutgers.edu">Get in touch</a> for more details.</p>
+          </div>
+        </section>
+        <aside>
+        <ul>
+          <li>FAQs for RTMDx Training Webinars</li>
+          <li><a href="#" on-click="return false" data-target="cost">What does the cost include?</a></li>
+          <li><a href="#" on-click="return false" data-target="attend">Who should attend?</a></li>
+          <li><a href="#" on-click="return false" data-target="time">What is the time commitment</a></li>
+          <li><a href="#" on-click="return false" data-target="software">What is the required software?</a></li>
+          <li><a href="#" on-click="return false" data-target="prereqs">Are there are prerequisites?</a></li>
+          <li><a href="#" on-click="return false" data-target="questions">Further Questions</a></li>
+        </ul>
+      </aside>
+      <main>
+        <article id="cost">
+          <h2>What does the cost include?</h2>
+          <p>This is a very comprehensive workshop. It starts at the introductory level and continues through intermediate/advanced. The self-guided content allows you to learn at your own pace-with readings, videos, software demonstrations and PowerPoint presentations.</p>
+
+          <p>Registration cost includes all course books, software (1-year ArcGIS license), the RTMDx Utility (Professional Version, single user license) and other materials. Also included is InfoGroup data for a jurisdiction of your choice (up to 1000 address-level records in the US or Canada) so you can have a customized analysis experience studying risk factors of your local environment.</p>
+
+          <p>Optional independent study projects will only be required of students who want a Certificate of Completion. Each student may produce an "industry standard" report demonstrating their application of risk terrain modeling methods to a topic of interest. For example, projects may be in the form of a PowerPoint presentation, crime report/bulletin, research brief, journal article, etc. Projects will be reviewed by associates at the Rutgers Center on Public Security (RCPS). Those that demonstrate a basic level of proficiency in RTM methods will earn a Certificate of Completion.</p>
+        </article>
+        <article id="attend">
+          <h2>Who should attend?</h2>
+          <p>Crime analysts, intelligence analysts, security professionals, researchers, criminal justice students, and GIS users interested in spatial modeling and risk assessment.</p>
+        </article>
+        <article id="time">
+          <h2>What is the time commitment?</h2>
+          <p>Each student is free to commit as much time to this webinar as they desire and are able. The video/audio demonstrations in the Modules amount to about 8 hours, combined. Plus there is recommended readings provided, which would take additional time. And, if you wanted to do the optional independent study to get a certificate of completion, then that could take varying amounts of time depending on what you do. In order to get the most out of this webinar, people should invest about 20-30 hours over the entire course (some people will devote more or less depending on skill levels).</p>
+        </article>
+        <article id="software">
+          <h2>What is the required software?</h2>
+          <p>This course is currently designed around both ArcGIS versions 9.3 and 10. All participants will receive an extended trial copy of ArcGIS 10.1 for installation on personal computers. All participants will receive a single user "Professional" license of the RTMDx Utility. The Professional version outputs GeoTiff maps.</p>
+
+          <p>To view the self-guided video presentation and other course content, you will need a broadband internet connection and the following software that can be downloaded for FREE: Microsoft Silverlight, Java, Adobe Shockwave, Adobe PDF Reader.</p>
+        </article>
+        <article id="prereqs">
+          <h2>Are there any prerequisites?</h2>
+          <p>Basic computer skills and knowledge of ArcGIS are highly recommended.</p>
+        </article>
+        <article id="questions">
+          <h2>Further Questions</h2>
+          <p>Send an email to <a href="jcaplan@rutgers.edu">Joel Caplan</a> or <a href="mailto:kennedy@newark.rutgers.edu">Leslie Kennedy</a> for any further questions, or <a href="http://rutgerscps.weebly.com/people.html">get in touch</a> other ways.</p>
+
+          <p>For other licensing options (e.g., site/multi-user, computer labs) or the use of trademarks, contact Dorian Grumet at the Rutgers University Office of Technology Commercialization (OTC).</p>
+        </article>
+        </main>
+      </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
     </body>
 </html>

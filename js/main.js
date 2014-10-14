@@ -24,13 +24,20 @@ $(document).ready(function(){
       }, 1000);
   }
 
-   $( 'nav ul li a, .download' ).on('click', function(event) {
+   $( '#index nav ul li a, .download' ).on('click', function(event) {
       event.preventDefault();
-      $('.back_to_top').fadeIn();
       $('.active').removeClass();
       $(this).addClass('active');
       animateScroll(this);
   });
+
+   $( 'aside ul li a, .more-training' ).on('click', function(e){
+   	e.preventDefault();
+   	$('.clicked').removeClass();
+   	$(this).addClass('clicked');
+   	animateScroll(this);
+   })
+
 
    $('.quart-page').hover(function(){
    		$(this).css('width','20%');
@@ -39,7 +46,6 @@ $(document).ready(function(){
    })
 
    $('.contact-right').click(function () {
-   	console.log('happening')
     $('#map_canvas').css("pointer-events", "auto");
 });
 
