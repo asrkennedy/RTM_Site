@@ -1,0 +1,36 @@
+nav {
+  color:$light-grey;
+  background-color:  $dark-grey;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 105;
+  ul {
+    @include lists;
+    li {
+      display: inline-block;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $light-grey;
+        padding: 15px;
+        margin-right: 20px;
+        font-size: 18px;
+        display: inline-block;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        &:hover,
+        &:focus,
+        .active {
+          background-color: $red; 
+        }
+      }
+    }
+  }
+}

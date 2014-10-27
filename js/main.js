@@ -42,7 +42,7 @@ $(document).ready(function(){
    		animateScroll(this);
    })
    		
-   $('.quart-page').hover(function(){
+   $('.rtm-users').hover(function(){
    		$(this).css('width','20%');
    },function(){
    		$(this).css('width','10%');

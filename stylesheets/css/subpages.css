@@ -1,0 +1,69 @@
+/*
+Error: Undefined variable: "$red".
+        on line 7 of /Users/andreakennedy/Documents/Sites/RTM_site/stylesheets/sass/subpages.scss
+
+2: /**************\/
+3: /***DOCSPAGE***\/
+4: /**************\/
+5: 
+6: .clicked {
+7: 	color: $red;
+8: }
+9: 
+10: #gst-header {
+11: 	width: 100%;
+12: 	color: $darkgrey;
+
+Backtrace:
+/Users/andreakennedy/Documents/Sites/RTM_site/stylesheets/sass/subpages.scss:7
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:377:in `visit_prop'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `block (2 levels) in visit_rule'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `map'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `block in visit_rule'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:410:in `visit_rule'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/tree/root_node.rb:20:in `render'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/engine.rb:268:in `render'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:486:in `update_stylesheet'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `each'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:464:in `on_file_changed'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:324:in `block in watch'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:282:in `call'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:282:in `_process_changes'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:239:in `block in _wait_for_changes'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:222:in `loop'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:222:in `_wait_for_changes'
+/Users/andreakennedy/.rvm/gems/ruby-2.0.0-p481/gems/listen-2.7.11/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$red\".\A         on line 7 of /Users/andreakennedy/Documents/Sites/RTM_site/stylesheets/sass/subpages.scss\A \A 2: /**************/\A 3: /***DOCSPAGE***/\A 4: /**************/\A 5: \A 6: .clicked {\A 7: 	color: $red;\A 8: }\A 9: \A 10: #gst-header {\A 11: 	width: 100%;\A 12: 	color: $darkgrey;"; }

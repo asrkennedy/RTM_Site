@@ -1,0 +1,556 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.button-wrapper {
+  margin: 60px auto 0;
+}
+
+.get-started,
+.download {
+  border: 1px solid #FFF;
+  color: #FFF;
+  width: 200px;
+  padding: 20px;
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.get-started:hover, .get-started:focus,
+.download:hover,
+.download:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.red-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid red;
+  padding: 20px;
+  width: 20%;
+  margin: auto;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 101;
+}
+.red-button:hover, .red-button:focus {
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.demo-button {
+  width: 200px;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.demo-button:hover, .demo-button:focus {
+  color: #303030;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.third-page {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+nav {
+  color: #F0F0F0;
+  background-color: #303030;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 105;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li:last-of-type {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #F0F0F0;
+  padding: 15px;
+  margin-right: 20px;
+  font-size: 18px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+nav ul li a:hover, nav ul li a:focus,
+nav ul li a .active {
+  background-color: #D20000;
+}
+
+.bg-1 {
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-size: cover;
+  background: url(../../img/Contrast_red_bg.png) 0 0 repeat;
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-text {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  z-index: 100;
+}
+
+.header-text h1, .header-text h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  margin: 0 auto;
+  border-top: 6px solid #FFF;
+  display: inline-block;
+  margin-top: 100px;
+  padding-top: 40px;
+}
+
+.header-text h3 {
+  font-size: 50px;
+  border: 0;
+  margin-top: 0;
+}
+
+/**************/
+/****ABOUT*****/
+/**************/
+#about {
+  background-color: #303030;
+  width: 100%;
+  color: #F0F0F0;
+  padding: 80px 40px;
+  height: 600px;
+}
+#about p {
+  font-size: 18px;
+}
+#about a {
+  color: #D20000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#about a:hover, #about a:focus {
+  color: #BF0000;
+}
+
+.about-wrapper {
+  border-right: 2px solid #FFF;
+  width: 67%;
+  padding-right: 40px;
+  float: left;
+}
+
+.logo-wrapper {
+  text-align: center;
+  width: 33%;
+  float: right;
+}
+
+/**************/
+/*****DOCS*****/
+/**************/
+#docs {
+  background-color: #FFF;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.hex-wrapper {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/staticmap.png);
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  z-index: 90;
+}
+
+.hex-wrapper-text {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  padding-top: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 91;
+}
+.hex-wrapper-text p {
+  color: #000;
+  font-size: 50px;
+  margin: 40px;
+}
+
+/**************/
+/*****DEMOS****/
+/**************/
+#demos {
+  color: #F0F0F0;
+  background-color: #303030;
+  padding: 40px;
+  height: 600px;
+}
+#demos .demos-text {
+  float: left;
+}
+#demos .demos-text a {
+  color: #D20000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#demos .demos-text a:hover, #demos .demos-text a:focus {
+  color: #BF0000;
+}
+#demos .demos-text h2 {
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+#demos .demos-text p {
+  text-align: left;
+  font-size: 18px;
+}
+
+#demos iframe {
+  margin-top: 60px;
+  width: 67%;
+  max-width: 700px;
+  height: 67%;
+  float: right;
+}
+
+/**************/
+/***DOWNLOAD***/
+/**************/
+#resources {
+  padding: 40px;
+  height: 600px;
+}
+#resources h2 {
+  margin: 0;
+}
+#resources p {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+#resources p a {
+  text-decoration: none;
+  color: #D20000;
+}
+
+.man,
+.rtm,
+.pub {
+  background: url(../../img/manuals-red.png);
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.rtm {
+  background: url(../../img/download-red.png);
+  background-size: 100px 100px;
+}
+
+.pub {
+  background: url(../../img/publications-red.png);
+  background-size: 100px 100px;
+}
+
+.publications,
+.manuals,
+.rtmdx {
+  border-right: 2px solid #000;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  padding: 20px 0;
+}
+.publications:hover, .publications:focus,
+.manuals:hover,
+.manuals:focus,
+.rtmdx:hover,
+.rtmdx:focus {
+  background-color: #F0F0F0;
+}
+.publications a,
+.manuals a,
+.rtmdx a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.publications a:hover, .publications a:focus,
+.manuals a:hover,
+.manuals a:focus,
+.rtmdx a:hover,
+.rtmdx a:focus {
+  color: #D20000;
+}
+
+.rtmdx {
+  border: none;
+}
+
+.icon {
+  display: block;
+  margin: 30px auto;
+}
+
+/**************/
+/***PRACTICE***/
+/**************/
+#in-practice {
+  color: #light-grey;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/Contrast_blue_bg.png");
+  padding: 40px;
+  height: 600px;
+}
+#in-practice .rtm-users img {
+  max-height: 200px;
+  width: auto;
+  margin: auto;
+}
+#in-practice div {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 40px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+}
+#in-practice div:hover, #in-practice div:focus {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.rtm-users {
+  width: 10%;
+  float: left;
+  min-height: 300px;
+  margin: 0.5%;
+  display: inline-block;
+  text-align: center;
+}
+
+/**************/
+/**SUPPORTERS**/
+/**************/
+.supporters-wrapper {
+  padding: 10px;
+  width: 100%;
+  text-align: right;
+}
+.supporters-wrapper h4 {
+  float: left;
+  margin: 0 40px;
+}
+
+.supporter {
+  display: inline-block;
+}
+.supporter img {
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  display: block;
+  margin-right: 20px;
+}
+
+/**************/
+/****CONTACT***/
+/**************/
+#contact {
+  background-color: #303030;
+  color: #FFF;
+  padding: 40px;
+  height: 100%;
+}
+#contact .contact-left {
+  width: 50%;
+  float: left;
+}
+#contact .contact-left ul {
+  margin: 0;
+  list-style: none;
+  line-height: 24px;
+  margin-top: 40px;
+}
+#contact .contact-left a {
+  color: #D20000;
+  text-decoration: none;
+}
+#contact .contact-right {
+  width: 50%;
+  float: right;
+  z-index: 92;
+}
+
+#map_canvas {
+  height: 400px;
+  margin-top: 60px;
+  pointer-events: none;
+}
