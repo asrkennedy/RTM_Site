@@ -1,0 +1,113 @@
+@import "foundation";
+@import "main";
+
+//iphone
+@media #{$small-only} {
+
+  .header-text h1 {
+  	margin-top: $base-margin;
+  }
+
+  .logo-wrapper img {
+  	width: 50%;
+  }
+
+  .red-button {
+  	width: 40%;
+  }
+
+  .icon {
+  	margin: 0 auto;
+  }
+
+  #resources p {
+  	margin: 10px auto;
+  }
+
+  #in-practice .row {
+	  overflow: scroll;
+	}
+
+} 
+
+@media #{$small-up} {
+  body {
+    font-size: 90%;
+  }
+
+  iframe {
+  	margin-top: $base-margin;
+  }
+
+  #map-canvas {
+		height: 200px;
+		margin-top: 20px;
+	}
+}
+
+@media #{$medium-up} { 
+
+	nav ul li a {
+		width: 14%;
+	}
+
+  .about-wrapper {
+  	border-right: 2px solid $white;
+  	padding-right: $base-padding;
+  }
+
+  .hex-wrapper-text {
+  	padding-top: 200px;
+  }
+
+  .resources p {
+  	font-size: 2em;
+  }
+
+  iframe {
+  	min-height: 45%;
+  }
+
+	.publications,
+	.manuals,
+	.rtmdx {
+		padding: 10px auto;
+		border-right: 2px solid $black;
+	}
+
+	.rtmdx {
+	  border: none;
+	}
+
+}
+
+@media #{$large-only} {
+  body {
+    font-size: 110%;
+  }
+
+  iframe {
+  	min-height: 60%;
+  	max-width: 700px;
+  	margin-top: 90px;
+  }
+
+  #about {
+  	padding: 80px $base-padding;
+  }
+
+  .rtm-users {
+		width: 10%;
+	}
+
+	.contact-left,
+	.contact-right {
+		width: $half-width;
+	}
+
+	.contact-right #map-canvas {
+		height: 400px !important;
+  	margin-top: 60px !important;
+	}
+
+}

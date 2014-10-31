@@ -1,0 +1,59 @@
+@import "compass";
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+
+// Font weights
+$light: 100;
+$regular: 400;
+$semi-bold: 500;
+$bold: 600;
+
+// Base Font
+$base-font-family: "Raleway", sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 1.125em;
+$base-line-height: 1.4;
+
+// Headings
+$title-font: 5.5em;
+$header-font-weight: $bold;
+$larger-base-font: 1.3em;
+$main-header-font-size: 2em;
+$subheader-font-size: 3em;
+
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $base-font-family;
+}
+
+h2 {
+	font-size: $main-header-font-size;
+}
+
+
+@import "modules/all";
+@import "modules/colors";
+@import "rgbapng";

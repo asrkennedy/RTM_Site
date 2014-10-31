@@ -1,0 +1,6 @@
+{
+    "name": "RTM_site",
+    "dependencies": {
+       "foundation": "~5.1.0"
+    }
+}

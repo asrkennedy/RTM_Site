@@ -10,7 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="stylesheets/css/main.css">
+        <!-- <link rel="stylesheet" href="stylesheets/app.css" /> -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css" />
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/media-queries.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
     <body id="index">
@@ -19,33 +23,40 @@
         <![endif]-->
 
       <div class="bg-1"></div>
-      <nav>
+      <nav class="row">
+        <div class="small-12 column" id="mobile-menu">☰</div>
         <ul>
-            <li><a href="#" on-click="return false" data-target="home" class="active">Home</a></li>
-            <li><a href="#" on-click="return false" data-target="about">About</a></li>
-            <li><a href="#" on-click="return false" data-target="docs">Getting Started</a></li>
-            <li><a href="#" on-click="return false" data-target="demos">Demos</a></li>
-            <li><a href="#" on-click="return false" data-target="resources">Resources</a></li>
-            <li><a href="#" on-click="return false" data-target="in-practice">RTM In Practice</a></li>
-            <li><a href="#" on-click="return false" data-target="contact">Contact</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="home" class="active">Home</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="about">About</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="docs">Getting Started</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="demos">Demos</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="resources">Resources</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="in-practice">RTM In Practice</a></li>
+            <li class="small-12"><a class="small-12" href="#" on-click="return false" data-target="contact">Contact</a></li>
         </ul>
-    	</nav>
+      </nav>
       <div class="wrapper">
-        <div id="home" class="header-text">
-            <h1>RTM in Practice</h1>
-            <h3>Documentation & Demo Site</h3>
-            <div class="button-wrapper">
-	            <a href="docs.html" class="get-started">Get Started</a>
-	            <a href="#" on-click="return false" data-target="resources" class="download">Resources</a>
-	           </div>
+        <div class="row">
+            <div id="home" class="header-text">
+                <h1 class="small-10">RTM in Practice</h1>
+                <h3>Documentation & Demo Site</h3>
+                <div class="row">
+                  <div class="button-wrapper small-12">
+      	            <a href="docs.html" class="get-started">Get Started</a>
+      	            <a href="#" on-click="return false" data-target="resources" class="download">Resources</a>
+      	          </div>
+                </div>
+            </div>
         </div>
         <section id="about" class="cf">
-          <div class="about-wrapper">
-          	<h2>About RTM</h2>
-	          <p>Risk Terrain Modeling, or RTM, was developed by <a href="http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/">Les Kennedy</a> and <a href="http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/">Joel Caplan</a> at Rutgers University. RTM is an approach to spatial risk analysis that utilizes a geographic information system to attribute qualities of the real world to places on a digitized map. It operationalizes the spatial influences of features of a landscape and models how they co-locate to create unique behavior settings for crime or other hazardous events. Risk terrain maps "paint a picture" to show where conditions are conducive for events to occur in the future. RTM offers a statistically valid way to articulate and communicate criminogenic and vulnerable areas at the micro-level.</p>
-          </div>
-          <div class="logo-wrapper">
-            <img class="rcps-logo" src="img/RCPS_logo.png" alt="RCPS Logo" width="300" height="300">
+          <div class="row">
+            <div class="about-wrapper small-12 medium-6 large-9">
+            	<h2>About RTM</h2>
+  	          <p>Risk Terrain Modeling, or RTM, was developed by <a href="http://rscj.newark.rutgers.edu/faculty/member/kennedy-leslie/">Les Kennedy</a> and <a href="http://rscj.newark.rutgers.edu/faculty/member/caplan-joel/">Joel Caplan</a> at Rutgers University. RTM is an approach to spatial risk analysis that utilizes a geographic information system to attribute qualities of the real world to places on a digitized map. It operationalizes the spatial influences of features of a landscape and models how they co-locate to create unique behavior settings for crime or other hazardous events. Risk terrain maps "paint a picture" to show where conditions are conducive for events to occur in the future. RTM offers a statistically valid way to articulate and communicate criminogenic and vulnerable areas at the micro-level.</p>
+            </div>
+            <div class="logo-wrapper small-12 medium-6 large-3">
+              <img class="rcps-logo" src="img/RCPS_logo.png" alt="RCPS Logo" width="300" height="300">
+            </div>
           </div>
         </section>
         <section id="docs">
@@ -56,95 +67,104 @@
 	        </div>
         </section>
         <section id="demos" class="cf">
-	        <div class="demos-text third-page">
-	        	<h2>Demos</h2>
-	        	<p>This 1:42 minute video shows a risk terrain map for gun shootings as a layer in Google Earth (The map shown here is actually one of the final products from the RTM workshop webinar). Using the "Street View" tool, this video demonstrates how differences between lower-risk places and higher-risk places (as defined by the RTM) can be observed in real terms within the environmental context of micro-level places in Irvington.</p>
-	        	<p>For more information, click <a href="http://rutgerscps.weebly.com/street-level-risk.html">here</a>.</p>
-	        	<a href="demos.html" class="red-button demo-button">More Demos</a>
-	        </div>
-        	<iframe src="http://www.youtube.com/embed/nS9YT1IyU0A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="row">
+  	        <div class="demos-text small-12 large-5 columns">
+  	        	<h2>Demos</h2>
+  	        	<p>This 1:42 minute video shows a risk terrain map for gun shootings as a layer in Google Earth (The map shown here is actually one of the final products from the RTM workshop webinar). Using the "Street View" tool, this video demonstrates how differences between lower-risk places and higher-risk places (as defined by the RTM) can be observed in real terms within the environmental context of micro-level places in Irvington.</p>
+  	        	<p>For more information, click <a href="http://rutgerscps.weebly.com/street-level-risk.html">here</a>.</p>
+  	        	<!-- <a href="demos.html" class="red-button demo-button">More Demos</a> -->
+  	        </div>
+          	<iframe src="http://www.youtube.com/embed/nS9YT1IyU0A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="small-12 large-6"></iframe>
+          </div>
         </section>
         <section id="resources">
-	        <h2>Resources</h2>
-	        <p>Read more about RTM <br>or find out more about our RTMDx software.</p>
-        	<div class="manuals third-page">
-        		<a href="docs.html#rtmdx-docs">
-        		<div class="icon man"></div>
-        		Manuals</a>
-        	</div>
-        	<div class="publications third-page">
-        		<a href="http://rutgerscps.weebly.com/publications.html" target="blank">
-        		<div class="icon pub"></div>
-        		Publications</a>
-        	</div>
-        	<div class="rtmdx third-page">
-        		<a href="training.html">
-        		<div class="icon rtm"></div>
-        		RTMDx</a>
-        	</div>
+          <div class="row">
+  	        <h2>Resources</h2>
+  	        <p>Read more about RTM <br>or find out more about our RTMDx software.</p>
+          	<div class="manuals small-12 medium-4 columns">
+          		<a href="docs.html#rtmdx-docs">
+          		<div class="icon man"></div>
+          		Manuals</a>
+          	</div>
+          	<div class="publications small-12 medium-4 columns">
+          		<a href="http://rutgerscps.weebly.com/publications.html" target="blank">
+          		<div class="icon pub"></div>
+          		Publications</a>
+          	</div>
+          	<div class="rtmdx small-12 medium-4 columns">
+          		<a href="training.html">
+          		<div class="icon rtm"></div>
+          		RTMDx</a>
+          	</div>
+          </div>
         </section>
         <section id="in-practice" class="cf">
-        	<h2>RTM Users</h2>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/risk-terrain-modeling-for-allocating-resources.aspx"><img src="img/nypd_logo.png" alt="NYPD Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/chicago.png" alt="Chicago Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/newark.png" alt="Newark Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/colorado.png" alt="Colorado Springs Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/kansas.png" alt="Kansas City Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/glendale.png" alt="Glendale Arizona Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/arlington.png" alt="Arlington Police Logo"></a>
-        	</div>
-        	<div class="rtm-users">
-        		<a href="http://www.dttas.ie/sites/default/files/publications/maritime/english/irish-coast-guard-publications/etv-report-part2-review-pollution-prevention-preparedness-and-response-capabilities.pdf"><img src="img/irish_cg.png" alt="Irish Coast Guard"></a>
-        	</div>
+          <div class="row">
+          	<h2>RTM Users</h2>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/risk-terrain-modeling-for-allocating-resources.aspx"><img src="img/nypd_logo.png" alt="NYPD Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/chicago.png" alt="Chicago Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/newark.png" alt="Newark Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/colorado.png" alt="Colorado Springs Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/kansas.png" alt="Kansas City Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/glendale.png" alt="Glendale Arizona Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/arlington.png" alt="Arlington Police Logo"></a>
+          	</div>
+          	<div class="rtm-users small-12">
+          		<a href="http://www.dttas.ie/sites/default/files/publications/maritime/english/irish-coast-guard-publications/etv-report-part2-review-pollution-prevention-preparedness-and-response-capabilities.pdf"><img src="img/irish_cg.png" alt="Irish Coast Guard"></a>
+          	</div>
+          </div>
         </section>
         <section id="contact" class="cf">
-        	<div class="contact-left">
-        		<h2>Contact Us</h2>
-	        	<ul>
-	        		<li>Rutgers Center on Public Security</li>
-							<li>Rutgers, The State University of New Jersey</li>
-							<li>School of Criminal Justice</li>
-							<li>123 Washington Street, 5th Floor</li>
-							<li>Newark, NJ 07102 USA</li>
-							<br>
-							<li><a href="mailto:rutgerscps@gmail.com">rutgerscps@gmail.com</a></li>
-						</ul>
-        	</div>
-        	<div class="contact-right">
-        		<div id="map_canvas"></div>
-        		<div class="supporters-wrapper">
-	        		<h4>Supporters:</h4>
-	        		<div class="supporter">
-		        		<a href="http://www.rutgers.edu"><img src="img/rutgers.png" alt="Rutgers University"></a>
-		        	</div>
-	        		<div class="supporter">
-		        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/nij.jpg" alt="National Institute of Justice"></a>
-		        	</div>
-		        	<div class="supporter">
-		        		<a href="http://rscj.newark.rutgers.edu/research/grants/"><img src="img/calgary.jpg" alt="University of Calgary"></a>
-		        	</div>
-		        	<div class="supporter">
-		        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/risk-terrain-modeling-for-allocating-resources.aspx"><img src="img/nypd_logo.png" alt="NYPD Logo"></a>
-		        	</div>
-		        </div>
-        	</div>
+          <div class="row">
+          	<div class="contact-left small-12 medium-12 columns">
+          		<h2>Contact Us</h2>
+  	        	<ul>
+  	        		<li>Rutgers Center on Public Security</li>
+  							<li>Rutgers, The State University of New Jersey</li>
+  							<li>School of Criminal Justice</li>
+  							<li>123 Washington Street, 5th Floor</li>
+  							<li>Newark, NJ 07102 USA</li>
+  							<br>
+  							<li><a href="mailto:rutgerscps@gmail.com">rutgerscps@gmail.com</a></li>
+  						</ul>
+          	</div>
+          	<div class="contact-right small-12 medium-12 columns">
+          		<div id="map_canvas"></div>
+          		<div class="supporters-wrapper">
+  	        		<h4>Supporters:</h4>
+  	        		<div class="supporter">
+  		        		<a href="http://www.rutgers.edu"><img src="img/rutgers.png" alt="Rutgers University"></a>
+  		        	</div>
+  	        		<div class="supporter">
+  		        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/research.aspx"><img src="img/nij.jpg" alt="National Institute of Justice"></a>
+  		        	</div>
+  		        	<div class="supporter">
+  		        		<a href="http://rscj.newark.rutgers.edu/research/grants/"><img src="img/calgary.jpg" alt="University of Calgary"></a>
+  		        	</div>
+  		        	<div class="supporter">
+  		        		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/risk-terrain-modeling-for-allocating-resources.aspx"><img src="img/nypd_logo.png" alt="NYPD Logo"></a>
+  		        	</div>
+  		        </div>
+          	</div>
+          </div>
         </section>
        </div>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script src="bower_components/foundation/js/foundation.min.js"></script>
+      <script src="js/app.js"></script>
       <script src="js/main.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
