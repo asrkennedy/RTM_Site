@@ -52,7 +52,7 @@ $(document).ready(function(){
     		$(this).css('width','10%');
     });
     $('#mobile-menu').hide();
-    $('nav ul li').width('13%');
+    // $('nav ul li').width('13%');
     $('nav').removeClass('row');
   } else {
     //show mobile menu
@@ -65,9 +65,16 @@ $(document).ready(function(){
     $('nav ul').toggle(function(){
       $('this').slideDown();
     },function(){
-      $('this').slideUp();
+      $('this').slideUp()
     });
   });
+
+  if ($('#mobile-menu').is(":visible")) {
+    $('#mobile-menu').siblings().on('click', function(){
+      $('nav ul').slideUp();
+    })
+  }
+  
 
 
   $('.contact-right').click(function () {

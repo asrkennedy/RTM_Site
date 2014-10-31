@@ -1927,6 +1927,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
+  width: auto;
 }
 nav ul li:last-of-type {
   margin-right: 0;
@@ -1939,7 +1940,6 @@ nav ul li #mobile-menu {
   margin-right: 40px;
   font-size: 1em;
   display: inline-block;
-  width: 14%;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -2317,6 +2317,11 @@ nav ul li #mobile-menu .active {
 }
 
 @media only screen and (max-width: 40em) {
+  nav ul li,
+  nav ul li a {
+    width: 100%;
+  }
+
   .header-text h1 {
     margin-top: 40px;
   }
@@ -2356,10 +2361,6 @@ nav ul li #mobile-menu .active {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  nav ul li a {
-    width: 14%;
-  }
-
   .about-wrapper {
     border-right: 2px solid #FFF;
     padding-right: 40px;

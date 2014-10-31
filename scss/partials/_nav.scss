@@ -13,6 +13,7 @@ nav {
     @include lists;
     li {
       display: inline-block;
+      width: auto;
       &:last-of-type {
         margin-right: 0;
       }
@@ -24,7 +25,6 @@ nav {
         margin-right: $base-margin;
         font-size: 1em;
         display: inline-block;
-        width: 14%;
         -webkit-transition: all 0.3s ease-out;
         -moz-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
