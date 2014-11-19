@@ -1953,6 +1953,7 @@ nav ul li #mobile-menu .active {
   font-size: 2em;
   min-height: 10vh;
   border-bottom: 5px solid red;
+  cursor: pointer;
 }
 
 .bg-1 {
@@ -2129,7 +2130,6 @@ nav ul li #mobile-menu .active {
 /**************/
 #resources {
   padding: 40px;
-  height: 100vh;
 }
 #resources h2 {
   margin: 0;
@@ -2500,6 +2500,9 @@ main article {
 #training article a:hover, #training article a:focus {
   color: #D20000;
 }
+#training article p {
+  font-size: 1.3em;
+}
 
 #recent-webinars {
   height: auto;
@@ -2508,6 +2511,19 @@ main article {
 @media only screen and (max-width: 40em) {
   body {
     font-size: 90%;
+  }
+
+  .bg-1 {
+    top: 10vh;
+    width: 100%;
+  }
+
+  .row {
+    height: auto;
+  }
+
+  #in-practice .row {
+    height: 100%;
   }
 
   nav ul li,
@@ -2544,6 +2560,10 @@ main article {
   #map-canvas {
     height: 200px;
     margin-top: 20px;
+  }
+
+  .supporters-wrapper {
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 40.063em) {
@@ -2585,6 +2605,10 @@ main article {
   .rtmdx {
     border: none;
   }
+
+  #products {
+    height: auto;
+  }
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   body {
@@ -2621,6 +2645,10 @@ main article {
   }
 
   #products {
-    width: 60vw;
+    width: 80vw;
+  }
+
+  #training article p {
+    font-size: 1.125em;
   }
 }

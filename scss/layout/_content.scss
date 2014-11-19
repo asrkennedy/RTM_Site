@@ -114,7 +114,6 @@
 
 #resources {
   padding: $base-padding;
-  height: $full-height;
   h2 {
     margin: 0;
   }
@@ -484,6 +483,9 @@ main {
       &:focus {
         color: #D20000;
       }
+    }
+    p {
+      font-size: $larger-base-font;
     }
   }
 }

@@ -8,6 +8,19 @@
     font-size: 90%;
   }
 
+  .bg-1 {
+    top: 10vh;
+    width: 100%;
+  }
+
+  .row {
+    height: auto;
+  }
+
+  #in-practice .row {
+    height: 100%;
+  }
+
 	nav ul li,
 	nav ul li a {
 		width: 100%;
@@ -46,6 +59,10 @@
 		height: 200px;
 		margin-top: 20px;
 	}
+
+  .supporters-wrapper {
+    max-width: 100%;
+  }
 }
 
 @media #{$medium-up} { 
@@ -91,6 +108,10 @@
 	  border: none;
 	}
 
+  #products {
+    height: auto;
+  }
+
 }
 
 @media #{$large-only} {
@@ -128,7 +149,11 @@
   }
 
   #products {
-    width: 60vw;
+    width: 80vw;
+  }
+
+  #training article p {
+    font-size: $base-font-size;
   }
 
 }

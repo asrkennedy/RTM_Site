@@ -1073,6 +1073,7 @@ nav ul li #mobile-menu .active {
   font-size: 2em;
   min-height: 10vh;
   border-bottom: 5px solid red;
+  cursor: pointer;
 }
 
 .bg-1 {
@@ -1249,7 +1250,6 @@ nav ul li #mobile-menu .active {
 /**************/
 #resources {
   padding: 40px;
-  height: 100vh;
 }
 #resources h2 {
   margin: 0;
@@ -1619,6 +1619,9 @@ main article {
 }
 #training article a:hover, #training article a:focus {
   color: #D20000;
+}
+#training article p {
+  font-size: 1.3em;
 }
 
 #recent-webinars {
