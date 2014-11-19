@@ -69,6 +69,9 @@
     font-size: $subheader-font-size;
     margin: $base-margin;
   }
+  a {
+    max-width: 200px;
+  }
 }
 
 
@@ -239,7 +242,7 @@
 
 
 .supporter {
-  width: 15vh;
+  width: 15%;
   float: left;
   img {
     max-width: 50px;

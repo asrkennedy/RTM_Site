@@ -2084,6 +2084,9 @@ nav ul li #mobile-menu .active {
   font-size: 3em;
   margin: 40px;
 }
+.hex-wrapper-text a {
+  max-width: 200px;
+}
 
 /**************/
 /*****DEMOS****/
@@ -2272,7 +2275,7 @@ nav ul li #mobile-menu .active {
 }
 
 .supporter {
-  width: 15vh;
+  width: 15%;
   float: left;
 }
 .supporter img {
