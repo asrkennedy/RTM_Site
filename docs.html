@@ -60,28 +60,33 @@
         </article>
         <article id="risk-assessment">
           <h2>Principles of Risk Assessment</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li>Risk features in the environment increase risk</li>
-            <li>Risk combina+ons lead to crime through increased spa+al influence</li>
-            <li>This influence can come from a>ractors and generators that aggravate environments or from detractors or suppressors that mi+gate these risks</li>
-            <li>This influence can be a func+on of exposure and vulnerability</li>
-          </ul> 
+          <ol>
+          <li>Risk features in the environment increase risk</li>
+            <li>Risk combinatons lead to crime through increased spatial influence</li>
+            <li>This influence can come from attractors and generators that aggravate environments or from detractors or suppressors that mitigate these risks</li>
+            <li>This influence can be a functon of exposure and vulnerability</li>
+          </ol>
+        </article>
+        <article id="risky-places">
+          <h2>The Theory of Risky Places</h2>
+          <p>This framework supports three propositions that are informed by the concepts of spatial influence, spatial inference, and spatial intelligence:</p>
+          <ol>
+            <li>All places are at risk, but because of the spatial influence of criminogenic features, some places are riskier than others.</li>
+
+            <p class="indented">This proposition addresses the direct spatial influence that risk factors, as studied in previous literature, have on behavior. It is based on Tobler’s first law, stated earlier that “Everything is related to everything else, but near things are more related than distant things” (Tobler, 1970). Our approach advances what has been done previously as we look at the relative importance of these factors when considered together, rather than single effects. We can add to this a consideration of risk to suggest that certain types of facilities, known to be stronger attractors of crime, will be where we will find the most crime. A feature’s spatial influence can be mapped in a GIS as, what we will refer to as, a risk map layer.</p>
+
+            <li>Crime emerges at places when there is high vulnerability based on the combined spatial influences of multiple criminogenic features at said places.</li>
+
+            <p class="indented">Vulnerability comes from the presence of a combination of spatial influences of features of a landscape that enhance the likelihood of crime. This addresses the concept of spatial inference, which regards interactions that occur among features to support criminal behavior. Vulnerability can be mapped in a GIS as a risk terrain map. </p>
+        
+            <li>Risky places result from an overall assessment of vulnerability and exposures throughout the landscape.</li>
+  
+            <p class="indented">We can say that a place is vulnerable but this is not important if there is no recent nearby exposure to crime. But, if crime occurred at a vulnerable place before then the likelihood that new crimes will occur goes up. </p>
+          </ol>
         </article>
         <article id="ten-steps">
           <h2>RTM in 10 Steps</h2>
-          The manual method of RTM involves the following steps:
+          <p>The manual method of RTM involves the following steps:</p>
           <ol>
             <li>Select an outcome event</li>
             <li>Choose a study area</li>
@@ -97,32 +102,44 @@
         </article>
         <article id="tech-aspects">
         <h2>Technical Aspects of RTM</h2>
-          <ul>
-            <li>Data needs</li>
-            <li>Statistical underpinnings</li>
-            <li>Automating the steps to RTM</li>
-            <li>Understanding the data outputs</li>
-          </ul>
+          
+           <p>Data needs</p>
+
+            <p class="indented">RTM was developed to leverage data from various sources and use readily accessible methods that most people could replicate.  Crime and risk factor datasets must be particular to the study settings. Increasingly in the United States these data can be downloaded from open sources like Open Data Philly, the Chicago Data Portal, or the Florida Geographic Data Library.</p>
+
+            <p class="indented">Content validity and construct validity are especially important when preparing data and considering data sources for RTM. Content validity refers to the degree to which a data set represents all facets of a given construct.  
+            Construct validity refers to the degree to which inferences can legitimately be made from the operational definitions of your factors to the theoretical constructs on which those operationalizations were based.   When thinking of data sources for RTM in this way, we are talking about the construct validity of the data sets. The dataset is how you translate a risk factor construct into an operationalized measure for testing and modeling.</p>
+            
+            <p>Statistical underpinnings</p>
+
+            <p>Automating the steps to RTM</p>
+
+            <p class="indented">This process of operationalizing spatial influence, whether it is informed by the results of a Nearest Neighbor Analysis or otherwise, can be done manually (i.e., “by hand”). It is rather simple map-making with the aid of a GIS, though it can be quite tedious when working with lots of potential risk factors. That is why we used the RTMDx Utility. Detailed technical steps for manually operationalizing spatial influence in a GIS can be found in the Risk Terrain Modeling Manual (Caplan & Kennedy, 2010). Be sure to consider the construct validity of how spatial influences are operationalized.</p>
+
+            <p>Understanding the data outputs</p>
+
+            <ol>
+            <li>First, the data used in the analysis should be reliable and valid, including both content and construct validities. The data sets and their sources should allow for replication and continued forecasting. This includes, but is not limited to, the requirement that the forecast technique does not rely heavily on the outcome of interest (i.e., the dependent variable) as the predictor, i.e., independent, variable. Such a forecasting technique would not be sustainable if it were considered to be successful and actionable since outcomes would ultimately be prevented. </li>
+            <li>Second, this brings us to the second requirement, that the outputs of the forecast should be operational. That is, it should be reasonably clear what to do with the information, either to respond to the forecasted effects or to modify the inputs to create a different forecast.</li>
+            <li> Third, the method of the forecast should be operationalized consistently from one instance to another. Data sets and sources may change, as will analysts, etc., but the reliability of the forecasting method must withstand multiple iterations, in different settings, by different people, and for different types of outcome events.</li>
+            <li>Fourth, the elements of the forecast should be articulable, with the importance of each factor relative to one another directly measured. The direct impact of key factors on outcomes should be demonstrable (i.e., internal validity).</li>
+            <li> Fifth, the output results should be within a range of reasonable expectations (i.e., face validity). If the forecast predicts something that is unlikely to occur based on past experience or theoretical knowledge, the forecasting process should be able to justify why that result was produced or else the forecasting process should be able to be revised in a non-arbitrary way.</li>
+          </ol>
         </article>
         <article id="rtm-maps">
           <h2>Working with RTM Maps</h2>
-          <ul>
-            <li>Understanding density versus distance effects in spa+al influence</li>
-            <li>Using buffers</li>
-          </ul>
+          <p>By viewing a risk terrain map in a GIS we can adjust the symbology and design final map layouts to visually communicate spatial vulnerabilities of a jurisdiction. Raster maps at the micro level can be created and presented as images in reports or even prepared for layering in Google Earth. Rasters can be converted to vector and aggregated up via spatial joins to streets, police sectors, census tracts, cities or regions. There are few limits as to the visual communication potential of risk terrain maps and related spatial data.</p>
         </article>
         <article id="interventions">
           <h2>Targeting Interventions</h2>
           <ol>
-            <li>The area that they focus on must be clearly identified as high risk.  Veering away from these areas is fine in pursuit of crime but this should be the exception not the rule.</li>
+            <li>The area that agencies focus on must be clearly identified as high risk.  Veering away from these areas is fine in pursuit of crime but this should be the exception not the rule.</li>
 
-            <li>The risk factors in the area are clearly identified in the IPIR so the intervention should focus on these risks not just be a concentration of effort around hot spots of crime.</li>
+            <li>The risk factors in the area are clearly identified so the intervention should focus on these risks not just be a concentration of effort around hot spots of crime.</li>
 
             <li>The collection of data needs to be both valid and accurate.  By this we mean that the actions that are done in an area should clearly relate to the intervention strategy directed at specific risks. Also, it is important that accurate geolocation data are collected to be able to identify where the intervention took place relative to the risk</li>
 
             <li>There should be some expectation that over time the risk from locational characteristics should abate as a result of the intervention.  For this to be measurable, a clear accounting of what the intervention actions did to reduce risk should be articulated as part of the plan based on the expected/intended spatial influence of Tx activities</li>
-
-            <li>In looking beyond cumulative risk, we think that the intervention process can be further refined by looking at specific combinations if high risk features in the environment.  These combinations, or behavior settings, can be examined u the context of interventions to see if they consistently respond to treatments, regardless if where they are located in the city.  So, a strategy can be developed, based on this, that would allow for a cross city behavior settings intervention process that is not constrained by specific geographic locations.</li>
 
             <li>For an effective evaluation to be performed, we need to have sufficient cases in our sample to have statistically valid analysis.  The "power " can be influenced by the length of the intervention and/or its geographic scope</li>
 
@@ -132,46 +149,39 @@
           </ol>
         </article>
         <article id="ipir">
-          <h2>IPIR Results</h2>
-          <ul>
-            <li>Agency wide imperatives (e.g.wellness)</li>
-            <li>Outlining IPIR guidelines</li>
-            <li>Matching data to locations</li>
-            <li>GeRng to interven+ons – agency reviews of risks and discussions about strategies</li>
-            <li>Directions for officers</li>
-          </ul>
-        </article>
-        <article id="evaluating">
-          <h2>Evaluating Results</h2>
-          <ul>
-            <li>Collecting data reliably</li>
-            <li>SeRng consistent geographies</li>
-            <li>Running sustained interventions</li>
-            <li>Evaluating results by location using propensity score matching in control areas</li>
-            <li>Evaluating results over similar times</li>
-          </ul>
+          <h2>Intervention Planning Intel Reports (IPIR)</h2>
+
+          <p>IPIRs are used to present spatial analysis to police agencies that they can use to create actionable interventions.  The risk-based interventions for this project should include at least 3 simultaneous activities—at least one that relates to each of the following categories:
+          </p>
+          <ol>
+            <li>Reducing the criminogenic spatial influence of one or more environmental crime risk factors. The risk factors that were empirically selected and included in the risk terrain models
+            (presented above) are what should receive focused attention for purposes of mitigation
+            efforts, with priority given to factors in order of their weighted influence.</li>
+            <li>
+            Developing evidence-based practices, such as activities related to target-hardening, situational
+            prevention, and/or community awareness.</li>
+            <li>
+            Using policing activities/patrols to deter and incapacitate known/motivated offenders.
+            The intervention should be designed in a manner that does not place an undue burden on police department resources or finances. This means that the intervention’s activities should be
+            considered to be “reasonably” sustainable/repeatable under “normal conditions” without external (i.e., grant) funding.</li>  
+          </ol>
         </article>
         <article id="conjunctive">
           <h2>Conjunctive Analysis</h2>
-          <ul>
-            <li>Understanding behavior settings</li>
-            <li>Technical steps to conjunctive analysis</li><li>Interpreting results</li>
-          </ul>
+          
+            <p>Understanding behavior settings</p>
+
+            <p class="indented">In looking beyond cumulative risk, the intervention process can be further refined by looking at specific combinations if high risk features in the environment.  These combinations, or behavior settings, can be examined in the context of interventions to see if they consistently respond to treatments, regardless if where they are located in the city.  So, a strategy can be developed, based on this, that would allow for a cross city behavior settings intervention process that is not constrained by specific geographic locations.</p>
+            
+            <p>Technical steps to conjunctive analysis</p>
+
+            <p class="indented">
+            Conjunctive analysis involves examining the likelihood that any combination of factors appear in a study area.  This analysis can then be used to assign a description to an area that can be compared to similar areas in a location.  For example, we may be interested in the behavior setting "bars close to schools", as these factors might show a high relationship to the crime outcome that we are studying.  We are able to identify the locations of these combinations and determine how their particular character is conducive to crime.
+            </p>
         </article>
         <article id="rtmdx-docs">
           <h2>Using RTMDx</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>RTMDx is a diagnostic tool for that automates the 10 steps of RTM.   A downloadable version of the educational version is available.  Also, a professional version is available for participants in our regularly scheduled webinar.</p>
           <div class="row">
             <div class="gst_wrapper small-12 medium-4">
               <a href="http://www.rutgerscps.org/rtm/RTM_Simulation_PPT_forWebsite/RTM_Simulation_PPT_forWebsite.htm">

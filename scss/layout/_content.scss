@@ -341,7 +341,22 @@ main {
   ul li,
   ol li {
     font-size: $larger-base-font;
+    list-style: decimal;
+    margin-left: $base-margin;
   }
+}
+
+#gst-header p.indented {
+  margin-left: 1.5*($base-margin);
+}
+
+#gst-header article p,
+#gst-header ul,
+#gst-header ol,
+#training p,
+#training ul,
+#training ol {
+  margin: 1em 0;
 }
 
 .gst_wrapper {
@@ -423,30 +438,31 @@ main {
 
 .free,
 .paid {
- font-size: 70px;
+ font-size: $subheader-font-size;
  text-align: center;
  width: 200px;
  margin: 0 auto;
  display: block;
  border: 2px solid red;
- color: #000;
- margin-bottom: 40px;
+ color: $black;
+ margin-bottom: $base-margin;
 }
 
 .more-training {
- margin-top: 40px;
- width: 400px;
+ margin-top: $base-margin;
+ max-width: 200px;
 }
 
 #training {
   padding: 40px;
   #recent-webinars {
     width: 100%;
-    padding-bottom: 60px;
+    height: auto;
+    padding-bottom: $base-padding;
+    margin-bottom: 1.5*($base-margin);
+    border-bottom: 5px solid $black;
   }
 }
-
-
 
 .web-wrap {
   float: left;
@@ -454,6 +470,7 @@ main {
   p a {
     color: red;
     text-decoration: none;
+    font-size: 100%;
     &:hover,
     &:focus {
       color: #D20000;
@@ -490,8 +507,16 @@ main {
   }
 }
 
-#recent-webinars {
-  height: auto;
+.web-wrap a,
+.web-wrap p, 
+.web-wrap h4 {
+  font-size: $larger-base-font;
 }
+
+#products h4 {
+  font-weight: bold;
+  margin-bottom: 0.5*($base-margin);
+}
+
 
 

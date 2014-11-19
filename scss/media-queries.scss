@@ -47,6 +47,26 @@
 	  overflow: scroll;
 	}
 
+  #products {
+    padding: $base-padding;
+  }
+
+  #rtmdx-left,
+  #rtmdx-right {
+    padding: 0.5*($base-padding) 0 0;
+    font-size: $larger-base-font;
+  }
+  
+  .more-training {
+    font-size: $larger-base-font;
+  }
+
+  #rtmdx-left {
+    border: 0;
+    border-bottom: 1px solid $black;
+    padding-bottom: $base-padding;
+  }
+
 } 
 
 @media #{$small-up} {
@@ -144,16 +164,12 @@
   }
 
   #gst-header,
-  #training aside {
+  #training {
     font-size: 80%;
   }
 
   #products {
     width: 80vw;
-  }
-
-  #training article p {
-    font-size: $base-font-size;
   }
 
 }

@@ -999,14 +999,12 @@ h2 {
 .red-button {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
-  font-size: 1.125em;
   text-align: center;
   border: 2px solid red;
   padding: 20px;
   margin: auto;
   text-decoration: none;
   display: block;
-  max-width: 200px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1489,6 +1487,21 @@ main article {
 #gst-header article ul li,
 #gst-header article ol li {
   font-size: 1.3em;
+  list-style: decimal;
+  margin-left: 40px;
+}
+
+#gst-header p.indented {
+  margin-left: 60px;
+}
+
+#gst-header article p,
+#gst-header ul,
+#gst-header ol,
+#training p,
+#training ul,
+#training ol {
+  margin: 1em 0;
 }
 
 .gst_wrapper {
@@ -1563,7 +1576,7 @@ main article {
 
 .free,
 .paid {
-  font-size: 70px;
+  font-size: 3em;
   text-align: center;
   width: 200px;
   margin: 0 auto;
@@ -1575,7 +1588,7 @@ main article {
 
 .more-training {
   margin-top: 40px;
-  width: 400px;
+  max-width: 200px;
 }
 
 #training {
@@ -1583,7 +1596,10 @@ main article {
 }
 #training #recent-webinars {
   width: 100%;
-  padding-bottom: 60px;
+  height: auto;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  border-bottom: 5px solid #000;
 }
 
 .web-wrap {
@@ -1593,6 +1609,7 @@ main article {
 .web-wrap p a {
   color: red;
   text-decoration: none;
+  font-size: 100%;
 }
 .web-wrap p a:hover, .web-wrap p a:focus {
   color: #D20000;
@@ -1624,6 +1641,13 @@ main article {
   font-size: 1.3em;
 }
 
-#recent-webinars {
-  height: auto;
+.web-wrap a,
+.web-wrap p,
+.web-wrap h4 {
+  font-size: 1.3em;
+}
+
+#products h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
 }

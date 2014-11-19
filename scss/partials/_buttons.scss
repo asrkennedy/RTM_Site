@@ -26,7 +26,7 @@ $button-spacing: 20px;
 .red-button {
   background-color: rgba(255, 255, 255, 0.8);
   color: $black;
-  font-size: $base-font-size;
+  // font-size: $base-font-size;
   text-align: center;
   border: 2px solid red;
   padding: $button-spacing;
@@ -34,7 +34,7 @@ $button-spacing: 20px;
   margin: auto;
   text-decoration: none;
   display: block;
-  max-width: 200px;
+  // max-width: 200px;
   @include transition(all, 0.3s);
   z-index: 101;
   &:hover,
