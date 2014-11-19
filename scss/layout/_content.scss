@@ -1,3 +1,4 @@
+
 /**************/
 /****ABOUT*****/
 /**************/
@@ -8,7 +9,6 @@
   color: $light-grey;
   padding: $base-padding;
   height: $full-height;
-  // @include span(12 of 12);
   p {
     font-size: $base-font-size;
   }
@@ -24,26 +24,13 @@
 }
 
 .about-wrapper {
-  // padding-right: $base-padding;
   float: left;
-  // @include span(isolate 8 of 12 at 2);
-  // @include breakpoint($mobile-to-medium) {
-  //     @include span(12 of 12);
-  // }
   max-width: 686px;
 }
 
 .logo-wrapper {
   text-align: center;
-  // @include span(isolate span 4 of 12 at 8);
-  // @include breakpoint($mobile-to-medium) {
-  //   @include span(12 of 12);
-  // }
   float: right;
-  // max-width: 337px;
-  // img {
-  //   margin: auto;
-  // }
 }
 
 /**************/
@@ -223,6 +210,10 @@
       -webkit-filter: grayscale(0%);
     }
   }
+  .row {
+    background: none;
+    color: $white;
+  }
 }
 
 .rtm-users {
@@ -249,7 +240,7 @@
 
 
 .supporter {
-  width: 15%;
+  width: 15vh;
   float: left;
   img {
     max-width: 50px;
@@ -269,7 +260,7 @@
   background-color: $dark-grey;
   color: $white;
   padding: $base-padding;
-  height: 100%;
+  height: auto;
   .contact-left {
     float: left;
     ul {
@@ -294,3 +285,211 @@
   margin-top: 40px;
   pointer-events: none;
 }
+
+// /**************/
+// /***DOCSPAGE***/
+// /**************/
+
+.clicked {
+ color: $red;
+}
+
+#gst-header {
+ width: 100%;
+ color: $dark-grey;
+ margin-top: 51px;
+ position: relative;
+ padding: 40px;
+}
+
+#gst-header h1 {
+ font-size: $subheader-font-size;
+}
+
+aside {
+  float: left;
+  margin-bottom: $base-margin;
+  ul {
+   margin: 0;
+   list-style: none;
+   padding: 0;
+   li a {
+     color: red;
+     line-height: 30px;
+     margin-left: 10px;
+     text-decoration: none;
+     font-size: $larger-base-font;
+    }
+  }
+}
+
+aside li:first-of-type {
+  font-size: $larger-base-font;
+  margin-bottom: 0.5*($base-margin);
+  color: $black;
+}
+
+main {
+ width: 67%;
+ float: right;
+ article {
+   padding-top: 20px;
+  }
+}
+
+#gst-header article {
+  p, 
+  ul li,
+  ol li {
+    font-size: $larger-base-font;
+  }
+}
+
+.gst_wrapper {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border-right: 2px solid #FFF;
+  padding: 40px 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  a {
+    width: 100%;
+    text-decoration: none;
+    color: #303030;
+    display: block;
+    font-size: 18px;
+   }
+  img {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+.gst_wrapper:last-of-type {
+ border-right: 0;
+}
+
+.gst_wrapper:hover,
+.gst_wrapper:focus {
+ background-color: rgba(255,0,0,0.5);
+}
+
+
+
+// ************
+// /***TRAINING***/
+// /**************/
+
+#rtmdx .wrapper {
+  margin-top: 2*($base-margin);
+}
+
+#products {
+  text-align: center;
+  margin: 0 auto;
+  width: $full-width;
+  padding: $base-padding 0;
+  a {
+   color: #000;
+   text-decoration: none;
+  }
+}
+
+#rtmdx-left,
+#rtmdx-right {
+ float: left;
+ border-right: 1px solid #000;
+ padding: 0 $base-padding;
+ margin-top: 0.5*($base-margin);
+}
+
+#rtmdx-left p a {
+ color: red;
+ &:hover,
+ &:focus {
+  color: #D20000;
+ }
+}
+
+#rtmdx-right {
+ float: left;
+ border: none;
+}
+
+.free,
+.paid {
+ font-size: 70px;
+ text-align: center;
+ width: 200px;
+ margin: 0 auto;
+ display: block;
+ border: 2px solid red;
+ color: #000;
+ margin-bottom: 40px;
+}
+
+.more-training {
+ margin-top: 40px;
+ width: 400px;
+}
+
+#training {
+  padding: 40px;
+  #recent-webinars {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+}
+
+
+
+.web-wrap {
+  float: left;
+  margin-bottom: $base-margin;
+  p a {
+    color: red;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: #D20000;
+    }
+  }
+}
+
+.register {
+ float: left;
+}
+
+#training {
+  aside {
+   position: static;
+   top: auto;
+  }
+  article {
+    padding: 0;
+    margin-bottom: 40px;
+    h2 {
+     margin-top: 0;
+    }
+    a {
+      color: red;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: #D20000;
+      }
+    }
+  }
+}
+
+#recent-webinars {
+  height: auto;
+}
+
+

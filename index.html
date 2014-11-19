@@ -16,16 +16,22 @@
         <link rel="stylesheet" href="stylesheets/main.css">
         <link rel="stylesheet" href="stylesheets/media-queries.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript">
+        function scrollTo(){
+         var section= ((window.location.href.split('#')[1].split('&'))[0]);
+         makeScroll("#" + section);
+        }
+        </script>
     </head>
-    <body id="index">
+    <body id="index" onload="scrollTo()">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
       <div class="bg-1"></div>
-      <nav class="row">
+      <nav>
         <div class="small-12 column" id="mobile-menu">☰</div>
-        <ul>
+          <ul>
             <li><a href="#" on-click="return false" data-target="home" class="active">Home</a></li>
             <li><a href="#" on-click="return false" data-target="about">About</a></li>
             <li><a href="#" on-click="return false" data-target="docs">Getting Started</a></li>
@@ -129,7 +135,7 @@
         </section>
         <section id="contact" class="cf">
           <div class="row">
-          	<div class="contact-left small-12 medium-12 columns">
+          	<div class="contact-left small-12 medium-6 columns">
           		<h2>Contact Us</h2>
   	        	<ul>
   	        		<li>Rutgers Center on Public Security</li>
@@ -141,7 +147,7 @@
   							<li><a href="mailto:rutgerscps@gmail.com">rutgerscps@gmail.com</a></li>
   						</ul>
           	</div>
-          	<div class="contact-right small-12 medium-12 columns">
+          	<div class="contact-right small-12 medium-6 columns">
           		<div id="map_canvas"></div>
           		<div class="supporters-wrapper">
   	        		<h4>Supporters:</h4>

@@ -17,9 +17,33 @@ function initialize() {
 
 function animateScroll(clickedLink){
    var target = "#" + $(clickedLink).data('target');
-    $('html, body').animate({
-        scrollTop: ($(target).offset().top)- 51
+   makeScroll(target);
+}
+
+function makeScroll(target){
+  $('body').animate({
+        scrollTop: ($(target).offset().top) - $('nav').height()
     }, 1000);
+}
+
+function normalMenu(){
+    $('#mobile-menu').hide();
+    // $('nav').removeClass('row');
+    $('nav ul').show();
+}
+
+function policeLogos(){
+   $('.rtm-users').hover(function(){
+      $(this).css('width','20%');
+    },function(){
+      $(this).css('width','10%');
+    });
+}
+
+function mobileMenu(){
+  // $('nav').addClass('row');
+  $('#mobile-menu').show();
+  $('nav ul').hide();
 }
 
 $(document).ready(function(){
@@ -46,20 +70,20 @@ $(document).ready(function(){
 
   //Animate police logos above tablet
   if (aboveTablet.matches) {
-    $('.rtm-users').hover(function(){
-    		$(this).css('width','20%');
-    },function(){
-    		$(this).css('width','10%');
-    });
-    $('#mobile-menu').hide();
-    // $('nav ul li').width('13%');
-    $('nav').removeClass('row');
+    normalMenu();
+    policeLogos();
   } else {
-    //show mobile menu
-    $('nav').addClass('row');
-    $('#mobile-menu').show();
-    $('nav ul').hide();
+    mobileMenu();
   }
+
+  $(window).resize(function(){
+    if (aboveTablet.matches) {
+      normalMenu();
+      policeLogos();
+    } else {
+      mobileMenu();
+    }
+  })
 
   $('#mobile-menu').on('click', function(){
     $('nav ul').toggle(function(){
@@ -74,13 +98,16 @@ $(document).ready(function(){
       $('nav ul').slideUp();
     })
   }
-  
-
 
   $('.contact-right').click(function () {
     $('#map_canvas').css("pointer-events", "auto");
 
   });
+
+  $('#docs nav a').on('click', function(e){
+    e.preventDefault();
+    window.location.replace($(this).attr('href'));
+  })
 
 
 

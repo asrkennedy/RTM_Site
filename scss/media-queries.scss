@@ -4,21 +4,22 @@
 //iphone
 @media #{$small-only} {
 
+  body {
+    font-size: 90%;
+  }
+
 	nav ul li,
 	nav ul li a {
 		width: 100%;
 	}
 
   .header-text h1 {
-  	margin-top: $base-margin;
+  	margin-top: 2*($base-margin);
+    padding: 0.5*($base-padding);
   }
 
   .logo-wrapper img {
   	width: 50%;
-  }
-
-  .red-button {
-  	width: 40%;
   }
 
   .icon {
@@ -36,9 +37,6 @@
 } 
 
 @media #{$small-up} {
-  body {
-    font-size: 90%;
-  }
 
   iframe {
   	margin-top: $base-margin;
@@ -52,13 +50,26 @@
 
 @media #{$medium-up} { 
 
+  $full-height: 90vh;
+
+  section {
+    height: $full-height;
+    max-height: $full-height;
+  }
+
   .about-wrapper {
   	border-right: 2px solid $white;
   	padding-right: $base-padding;
   }
 
+  .hex-wrapper,
+  #contact {
+    height: $full-height;
+  }
+
   .hex-wrapper-text {
   	padding-top: 200px;
+    height: $full-height;
   }
 
   .resources p {
@@ -101,14 +112,23 @@
 		width: 10%;
 	}
 
-	.contact-left,
-	.contact-right {
-		width: $half-width;
-	}
-
 	.contact-right #map-canvas {
 		height: 400px !important;
   	margin-top: 60px !important;
 	}
+
+  aside {
+    top: 100px;
+    position: fixed;
+  }
+
+  #gst-header,
+  #training aside {
+    font-size: 80%;
+  }
+
+  #products {
+    width: 60vw;
+  }
 
 }

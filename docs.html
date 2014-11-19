@@ -11,27 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/subpages.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/media-queries.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
   <body id="docs">
     <nav>
+      <div class="small-12 column" id="mobile-menu">☰</div>
       <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#docs" class="active">Getting Started</a></li>
-          <li><a href="index.html#demos">Demos</a></li>
-          <li><a href="index.html#resources">Resources</a></li>
-          <li><a href="index.html#in-practice">RTM In Practice</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+            <li><a href="index.html" on-click="return false" data-target="home">Home</a></li>
+            <li><a href="index.html#about" on-click="return false" data-target="about">About</a></li>
+            <li><a href="index.html#docs" on-click="return false" data-target="docs" class="active">Getting Started</a></li>
+            <li><a href="index.html#demos" on-click="return false" data-target="demos">Demos</a></li>
+            <li><a href="index.html#resources" on-click="return false" data-target="resources">Resources</a></li>
+            <li><a href="index.html#in-practice" on-click="return false" data-target="in-practice">RTM In Practice</a></li>
+            <li><a href="index.html#contact" on-click="return false" data-target="contact">Contact</a></li>
+        </ul>
     </nav>
     <section id="gst-header" class="cf">
-      <aside>
+      <aside class="small-12 large-3">
         <ul>
           <li>Getting Started with RTM</li>
           <li><a href="#" on-click="return false" data-target="what-is">What is RTM?</a></li>
@@ -47,7 +47,7 @@
           <li><a href="#" on-click="return false" data-target="rtmdx-docs">RTMDx</a></li>
         </ul>
       </aside>
-      <main>
+      <main class="small-12 large-8">
         <h1>Practical Steps in Using RTM</h1>
         <article id="what-is">
           <h2>What is RTM?</h2>
@@ -172,27 +172,28 @@
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="gst_wrapper">
-            <a href="http://www.rutgerscps.org/rtm/RTM_Simulation_PPT_forWebsite/RTM_Simulation_PPT_forWebsite.htm">
-              <img src="img/arcgis.gif" alt="Arc GIS Simulation">
-              Watch RTM Simulation
-            </a>
-          </div>
-          <div class="gst_wrapper">
-            <a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dHl5M2UzUFpGUHRES3VHVmRWbGQySWc6MA#gid=0">
-              <img src="img/user_man.jpg" alt="User Manual">
-              Request User Manual
-            </a>
-          </div>
-          <div class="gst_wrapper">
-            <a href="http://rutgerscps.weebly.com/uploads/2/7/3/7/27370595/rtmdx_um_appendix_rev4.pdf">
-              <img src="img/Appendix.png" alt="User Appendix">
-              Request the Appendix
-            </a>
+          <div class="row">
+            <div class="gst_wrapper small-12 medium-4">
+              <a href="http://www.rutgerscps.org/rtm/RTM_Simulation_PPT_forWebsite/RTM_Simulation_PPT_forWebsite.htm">
+                <img src="img/arcgis.gif" alt="Arc GIS Simulation">
+                Watch RTM Simulation
+              </a>
+            </div>
+            <div class="gst_wrapper small-12 medium-4">
+              <a href="https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dHl5M2UzUFpGUHRES3VHVmRWbGQySWc6MA#gid=0">
+                <img src="img/user_man.jpg" alt="User Manual">
+                Request User Manual
+              </a>
+            </div>
+            <div class="gst_wrapper small-12 medium-4">
+              <a href="http://rutgerscps.weebly.com/uploads/2/7/3/7/27370595/rtmdx_um_appendix_rev4.pdf">
+                <img src="img/Appendix.png" alt="User Appendix">
+                Request the Appendix
+              </a>
+            </div>
           </div>
         </article>
       </main>
-      
     </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="js/main.js"></script>

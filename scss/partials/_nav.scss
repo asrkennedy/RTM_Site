@@ -1,5 +1,5 @@
 nav {
-  height: auto !important;
+  height: 10vh !important;
   color:$light-grey;
   background-color:  $dark-grey;
   text-align: center;
@@ -8,21 +8,16 @@ nav {
   position: fixed;
   top: 0;
   z-index: 105;
-  // @include span(12 of 12);
   ul {
     @include lists;
+    background-color: $dark-grey;
     li {
       display: inline-block;
-      width: auto;
-      &:last-of-type {
-        margin-right: 0;
-      }
       a,
       #mobile-menu {
         text-decoration: none;
         color: $light-grey;
-        padding: 15px;
-        margin-right: $base-margin;
+        padding: 15px 25px;
         font-size: 1em;
         display: inline-block;
         -webkit-transition: all 0.3s ease-out;
@@ -41,4 +36,7 @@ nav {
 
 #mobile-menu {
   display: none;
+  font-size: $main-header-font-size;
+  min-height: 10vh;
+  border-bottom: 5px solid red;
 }
