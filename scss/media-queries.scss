@@ -4,6 +4,10 @@
 //iphone
 @media #{$small-only} {
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     font-size: 70%;
   }
@@ -15,6 +19,10 @@
   .row {
     height: auto;
   }
+
+  // .hex-wrapper {
+  //   display: none;
+  // }
 
   .header-text {
     font-size: 60%;
@@ -100,6 +108,17 @@
   .supporters-wrapper {
     max-width: 100%;
   }
+
+  section,
+  .hex-wrapper,
+  .hex-wrapper-text,
+  .bg-1 {
+    min-height: 400px;
+  }
+
+  #mobile-menu {
+    min-height: 35px;
+  }
 }
 
 @media #{$iphone-six-up} {
@@ -145,8 +164,9 @@
   	font-size: 2em;
   }
 
-  iframe {
+  #demos iframe {
   	min-height: 45%;
+    padding-bottom: $base-padding;
   }
 
 	.publications,
@@ -171,10 +191,11 @@
     font-size: 110%;
   }
 
-  iframe {
+  #demos iframe {
   	min-height: 60%;
   	max-width: 700px;
-  	margin-top: 90px;
+  	margin-top: 120px;
+    padding: 0;
   }
 
   .about-wrapper {

@@ -63,7 +63,13 @@ function initialize() {
   });
 }
 
+function clearActive(){
+  $('nav ul li a').blur();
+
+}
+
 function onScroll(event){
+    clearActive();
     var scrollPos = $(document).scrollTop();
     // console.log($('nav a').length)
     $('nav a').each(function () {
@@ -147,5 +153,5 @@ $(document).ready(function(){
   }
 
   $(document).on('scroll', onScroll);
-
+  
 })

@@ -43,7 +43,7 @@
 
 #docs {
   background-color: $white;
-  height: $full-height;
+  // height: $full-height;
   width: $full-width;
   position: relative;
 }
@@ -54,7 +54,7 @@
   @include background-image;
   text-align: center;
   width: $full-width;
-  height: $full-height;
+  // height: $full-height;
   position: relative;
   overflow: hidden;
   z-index: 90;
@@ -64,7 +64,7 @@
   background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
   width: $full-width;
-  height: $full-height;
+  // height: $full-height;
   padding-top: $base-padding;
   @include absolute;
   z-index: 91;
@@ -195,7 +195,7 @@
   color: #light-grey;
   @include background-image;
   background-image: url("../img/Contrast_blue_bg.png");
-  height: $full-height;
+  // height: $full-height;
   .in-practice-wrapper {
     padding: $base-padding;
   }
