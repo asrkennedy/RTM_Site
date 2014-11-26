@@ -1,3 +1,7 @@
+#home {
+  float: left;
+}
+
 
 /**************/
 /****ABOUT*****/
@@ -7,7 +11,7 @@
   background-color: $dark-grey;
   width: $full-width;
   color: $light-grey;
-  height: $full-height;
+  // height: $full-height;
   p {
     font-size: $base-font-size;
   }
@@ -81,7 +85,7 @@
 #demos {
   color: $light-grey;
   background-color: $dark-grey;
-  height: $full-height;
+  // height: $full-height;
   .demos-text {
     float: left;
     display: inline-block;

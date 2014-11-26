@@ -1907,7 +1907,6 @@ h2 {
 }
 
 nav {
-  height: 10vh !important;
   color: #F0F0F0;
   background-color: #303030;
   text-align: center;
@@ -1951,7 +1950,7 @@ nav ul li #mobile-menu:focus {
 #mobile-menu {
   display: none;
   font-size: 2em;
-  min-height: 10vh;
+  max-height: 10vh;
   border-bottom: 5px solid red;
   cursor: pointer;
 }
@@ -2003,6 +2002,10 @@ nav ul li #mobile-menu:focus {
   margin-top: 0;
 }
 
+#home {
+  float: left;
+}
+
 /**************/
 /****ABOUT*****/
 /**************/
@@ -2010,7 +2013,6 @@ nav ul li #mobile-menu:focus {
   background-color: #303030;
   width: 100vw;
   color: #F0F0F0;
-  height: 100vh;
 }
 #about p {
   font-size: 1.125em;
@@ -2096,7 +2098,6 @@ nav ul li #mobile-menu:focus {
 #demos {
   color: #F0F0F0;
   background-color: #303030;
-  height: 100vh;
 }
 #demos .demos-text {
   float: left;
@@ -2542,16 +2543,19 @@ main article {
 
 @media only screen and (max-width: 40em) {
   body {
-    font-size: 90%;
+    font-size: 70%;
   }
 
   .bg-1 {
-    top: 10vh;
     width: 100%;
   }
 
   .row {
     height: auto;
+  }
+
+  .header-text {
+    font-size: 60%;
   }
 
   #in-practice .row {
@@ -2569,11 +2573,24 @@ main article {
   }
 
   .logo-wrapper img {
-    width: 50%;
+    width: 40%;
+    padding-top: 20px;
+  }
+
+  .button-wrapper a {
+    font-size: 140%;
+    margin: 0 20px;
   }
 
   .icon {
     margin: 0 auto;
+  }
+
+  #demos .demos-text {
+    padding: 40px 40px 0;
+  }
+  #demos .demos-text h2 {
+    margin: 0;
   }
 
   #resources p {
@@ -2605,8 +2622,9 @@ main article {
   }
 }
 @media only screen {
-  iframe {
+  #demos iframe {
     margin-top: 40px;
+    padding-bottom: 40px;
   }
 
   #map-canvas {
@@ -2618,6 +2636,15 @@ main article {
     max-width: 100%;
   }
 }
+@media only screen and (min-width: 46em) {
+  body {
+    font-size: 100%;
+  }
+
+  .header-text {
+    padding-top: 40px;
+  }
+}
 @media only screen and (min-width: 40.063em) {
   section {
     height: 90vh;
@@ -2627,6 +2654,7 @@ main article {
   .about-wrapper {
     border-right: 2px solid #FFF;
     padding-right: 40px;
+    margin-top: 40px;
   }
 
   .logo-wrapper {
@@ -2679,7 +2707,7 @@ main article {
 
   .about-wrapper {
     margin: 80px 40px;
-    padding: 0;
+    padding: 0 40px;
   }
 
   .logo-wrapper {

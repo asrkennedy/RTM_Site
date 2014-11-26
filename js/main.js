@@ -6,6 +6,13 @@ function animateScroll(clickedLink){
    makeScroll(target);
 }
 
+function animateMobileScroll(clicked){
+  var target = "#" + $(clicked).data('target');
+  $('body').animate({
+        scrollTop: ($(target).offset().top) - $('#mobile-menu').height()
+    }, 1000);
+}
+
 function makeScroll(target){
   $('body').animate({
         scrollTop: ($(target).offset().top) - $('nav').height()
@@ -80,13 +87,13 @@ function scrollTo(){
 
 $(document).ready(function(){
 
-	if ( page === "index") {
+  if ( page === "index") {
 
     $( '#index nav ul li a' ).on('click', function(event) {
       event.preventDefault();
       $('.active').removeClass();
       $(this).addClass('active');
-      animateScroll(this);
+      animateMobileScroll(this);
     });
 
     $('.download').on('click', function(){
@@ -104,10 +111,10 @@ $(document).ready(function(){
   //TRAINING PAGE
 
   $( 'aside ul li a, .more-training' ).on('click', function(e){
-  	e.preventDefault();
-  	$('.clicked').removeClass();
-  	$(this).addClass('clicked');
-  	animateScroll(this);
+    e.preventDefault();
+    $('.clicked').removeClass();
+    $(this).addClass('clicked');
+    animateScroll(this);
   });
 
   //DOCS PAGE

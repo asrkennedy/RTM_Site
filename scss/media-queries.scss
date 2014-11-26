@@ -5,16 +5,19 @@
 @media #{$small-only} {
 
   body {
-    font-size: 90%;
+    font-size: 70%;
   }
 
   .bg-1 {
-    top: 10vh;
     width: 100%;
   }
 
   .row {
     height: auto;
+  }
+
+  .header-text {
+    font-size: 60%;
   }
 
   #in-practice .row {
@@ -32,11 +35,24 @@
   }
 
   .logo-wrapper img {
-  	width: 50%;
+  	width: 40%;
+    padding-top: 0.5*($base-padding);
+  }
+
+  .button-wrapper a {
+    font-size: 140%;
+    margin: 0 0.5*($base-margin);
   }
 
   .icon {
   	margin: 0 auto;
+  }
+
+  #demos .demos-text {
+    padding: $base-padding $base-padding 0;
+    h2 {
+      margin: 0;
+    }
   }
 
   #resources p {
@@ -71,8 +87,9 @@
 
 @media #{$small-up} {
 
-  iframe {
+  #demos iframe {
   	margin-top: $base-margin;
+    padding-bottom: $base-padding;
   }
 
   #map-canvas {
@@ -82,6 +99,16 @@
 
   .supporters-wrapper {
     max-width: 100%;
+  }
+}
+
+@media #{$iphone-six-up} {
+  body {
+    font-size: 100%;
+  }
+
+  .header-text {
+    padding-top: $base-padding;
   }
 }
 
@@ -97,6 +124,7 @@
   .about-wrapper {
   	border-right: 2px solid $white;
   	padding-right: $base-padding;
+    margin-top: $base-margin;
   }
 
   .logo-wrapper {
@@ -151,7 +179,7 @@
 
   .about-wrapper {
   	margin: 80px $base-margin;
-    padding: 0;
+    padding: 0 $base-padding;
   }
 
   .logo-wrapper {

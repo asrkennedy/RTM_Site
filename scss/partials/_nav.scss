@@ -1,5 +1,5 @@
 nav {
-  height: 10vh !important;
+  // height: 10vh !important;
   color:$light-grey;
   background-color:  $dark-grey;
   text-align: center;
@@ -40,7 +40,7 @@ nav {
 #mobile-menu {
   display: none;
   font-size: $main-header-font-size;
-  min-height: 10vh;
+  max-height: 10vh;
   border-bottom: 5px solid red;
   cursor: pointer;
 }

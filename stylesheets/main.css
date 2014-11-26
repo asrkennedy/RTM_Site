@@ -1027,7 +1027,6 @@ h2 {
 }
 
 nav {
-  height: 10vh !important;
   color: #F0F0F0;
   background-color: #303030;
   text-align: center;
@@ -1071,7 +1070,7 @@ nav ul li #mobile-menu:focus {
 #mobile-menu {
   display: none;
   font-size: 2em;
-  min-height: 10vh;
+  max-height: 10vh;
   border-bottom: 5px solid red;
   cursor: pointer;
 }
@@ -1123,6 +1122,10 @@ nav ul li #mobile-menu:focus {
   margin-top: 0;
 }
 
+#home {
+  float: left;
+}
+
 /**************/
 /****ABOUT*****/
 /**************/
@@ -1130,7 +1133,6 @@ nav ul li #mobile-menu:focus {
   background-color: #303030;
   width: 100vw;
   color: #F0F0F0;
-  height: 100vh;
 }
 #about p {
   font-size: 1.125em;
@@ -1216,7 +1218,6 @@ nav ul li #mobile-menu:focus {
 #demos {
   color: #F0F0F0;
   background-color: #303030;
-  height: 100vh;
 }
 #demos .demos-text {
   float: left;
