@@ -7,7 +7,6 @@
   background-color: $dark-grey;
   width: $full-width;
   color: $light-grey;
-  padding: $base-padding;
   height: $full-height;
   p {
     font-size: $base-font-size;
@@ -26,6 +25,7 @@
 .about-wrapper {
   float: left;
   max-width: 686px;
+  padding: $base-padding $base-padding 0;
 }
 
 .logo-wrapper {
@@ -81,12 +81,12 @@
 #demos {
   color: $light-grey;
   background-color: $dark-grey;
-  padding: $base-padding;
   height: $full-height;
   .demos-text {
     float: left;
     display: inline-block;
     text-align: center;
+    padding: $base-padding;
     a {
       color: $red;
       text-decoration: none;
@@ -109,6 +109,7 @@
 
 #demos iframe {
   float: right;
+  padding: 0 $base-padding;
 }
 
 /**************/
@@ -116,7 +117,9 @@
 /**************/
 
 #resources {
-  padding: $base-padding;
+  .resources-wrapper {
+      padding: $base-padding;
+  }
   h2 {
     margin: 0;
   }
@@ -188,8 +191,10 @@
   color: #light-grey;
   @include background-image;
   background-image: url("../img/Contrast_blue_bg.png");
-  padding: $base-padding;
   height: $full-height;
+  .in-practice-wrapper {
+    padding: $base-padding;
+  }
   .rtm-users img {
     max-height: 200px;
     width: auto;

@@ -1,24 +1,6 @@
 @import "susy";
 @import "breakpoint";
 
-
-// $susy: (
-// 	columns: 12,
-// 	gutters: 1/4,
-// 	math: fluid,
-// 	output: float,
-// 	gutter-position: inside
-// );
-
-// // Break-points
-// $mobile-only: 300px 500px;
-// $mobile-to-small: 300px 650px;
-// $mobile-to-medium: 300px 880px;
-// $small: 500px;
-// $medium: 880px;
-// $large: 1100px;
-// $extralarge: 1680px;
-
 $small-range: (0em, 40em);
 $medium-range: (40.063em, 62em);
 $large-range: (62.063em, 90em);

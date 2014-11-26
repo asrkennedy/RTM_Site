@@ -25,13 +25,16 @@ nav {
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
         &:hover,
-        &:focus,
-        .active {
+        &:focus{
           background-color: $red; 
         }
       }
     }
   }
+}
+
+.active {
+  background-color: $red; 
 }
 
 #mobile-menu {

@@ -99,6 +99,10 @@
   	padding-right: $base-padding;
   }
 
+  .logo-wrapper {
+    padding: $base-padding;
+  }
+
   .hex-wrapper,
   #contact {
     height: $full-height;
@@ -145,8 +149,13 @@
   	margin-top: 90px;
   }
 
-  #about {
-  	padding: 80px $base-padding;
+  .about-wrapper {
+  	margin: 80px $base-margin;
+    padding: 0;
+  }
+
+  .logo-wrapper {
+    padding: 80px 0;
   }
 
   .rtm-users {

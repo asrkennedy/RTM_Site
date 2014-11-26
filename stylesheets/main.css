@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,700");
 .row {
   height: 100%;
 }
@@ -1059,10 +1059,12 @@ nav ul li #mobile-menu {
   transition: all 0.3s ease-out;
 }
 nav ul li a:hover, nav ul li a:focus,
-nav ul li a .active,
 nav ul li #mobile-menu:hover,
-nav ul li #mobile-menu:focus,
-nav ul li #mobile-menu .active {
+nav ul li #mobile-menu:focus {
+  background-color: #D20000;
+}
+
+.active {
   background-color: #D20000;
 }
 
@@ -1128,7 +1130,6 @@ nav ul li #mobile-menu .active {
   background-color: #303030;
   width: 100vw;
   color: #F0F0F0;
-  padding: 40px;
   height: 100vh;
 }
 #about p {
@@ -1149,6 +1150,7 @@ nav ul li #mobile-menu .active {
 .about-wrapper {
   float: left;
   max-width: 686px;
+  padding: 40px 40px 0;
 }
 
 .logo-wrapper {
@@ -1214,13 +1216,13 @@ nav ul li #mobile-menu .active {
 #demos {
   color: #F0F0F0;
   background-color: #303030;
-  padding: 40px;
   height: 100vh;
 }
 #demos .demos-text {
   float: left;
   display: inline-block;
   text-align: center;
+  padding: 40px;
 }
 #demos .demos-text a {
   color: #D20000;
@@ -1244,12 +1246,13 @@ nav ul li #mobile-menu .active {
 
 #demos iframe {
   float: right;
+  padding: 0 40px;
 }
 
 /**************/
 /***DOWNLOAD***/
 /**************/
-#resources {
+#resources .resources-wrapper {
   padding: 40px;
 }
 #resources h2 {
@@ -1341,8 +1344,10 @@ nav ul li #mobile-menu .active {
   width: 100%;
   height: 100%;
   background-image: url("../img/Contrast_blue_bg.png");
-  padding: 40px;
   height: 100vh;
+}
+#in-practice .in-practice-wrapper {
+  padding: 40px;
 }
 #in-practice .rtm-users img {
   max-height: 200px;

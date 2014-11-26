@@ -16,12 +16,6 @@
         <link rel="stylesheet" href="stylesheets/main.css">
         <link rel="stylesheet" href="stylesheets/media-queries.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script type="text/javascript">
-        function scrollTo(){
-         var section= ((window.location.href.split('#')[1].split('&'))[0]);
-         makeScroll("#" + section);
-        }
-        </script>
     </head>
     <body id="index" onload="scrollTo()">
         <!--[if lt IE 7]>
@@ -32,13 +26,13 @@
       <nav>
         <div class="small-12 column" id="mobile-menu">☰</div>
           <ul>
-            <li><a href="#" on-click="return false" data-target="home" class="active">Home</a></li>
-            <li><a href="#" on-click="return false" data-target="about">About</a></li>
-            <li><a href="#" on-click="return false" data-target="docs">Getting Started</a></li>
-            <li><a href="#" on-click="return false" data-target="demos">Demos</a></li>
-            <li><a href="#" on-click="return false" data-target="resources">Resources</a></li>
-            <li><a href="#" on-click="return false" data-target="in-practice">RTM In Practice</a></li>
-            <li><a href="#" on-click="return false" data-target="contact">Contact</a></li>
+            <li><a href="#home" on-click="return false" data-target="home" class="active">Home</a></li>
+            <li><a href="#about" on-click="return false" data-target="about">About</a></li>
+            <li><a href="#docs" on-click="return false" data-target="docs">Getting Started</a></li>
+            <li><a href="#demos" on-click="return false" data-target="demos">Demos</a></li>
+            <li><a href="#resources" on-click="return false" data-target="resources">Resources</a></li>
+            <li><a href="#in-practice" on-click="return false" data-target="in-practice">RTM In Practice</a></li>
+            <li><a href="#contact" on-click="return false" data-target="contact">Contact</a></li>
         </ul>
       </nav>
       <div class="wrapper">
@@ -76,15 +70,13 @@
           <div class="row">
   	        <div class="demos-text small-12 large-5 columns">
   	        	<h2>Demos</h2>
-  	        	<p>This 1:42 minute video shows a risk terrain map for gun shootings as a layer in Google Earth (The map shown here is actually one of the final products from the RTM workshop webinar). Using the "Street View" tool, this video demonstrates how differences between lower-risk places and higher-risk places (as defined by the RTM) can be observed in real terms within the environmental context of micro-level places in Irvington.</p>
-  	        	<p>For more information, click <a href="http://rutgerscps.weebly.com/street-level-risk.html">here</a>.</p>
-  	        	<!-- <a href="demos.html" class="red-button demo-button">More Demos</a> -->
+  	        	<p>The Risk Terrain Modeling Diagnostics (RTMDx) Utility is a software application for Risk Terrain Modeling (RTM). It helps to identify and communicate the spatial attractors and generators of crime incidents. It diagnoses spatial crime vulnerabilities.</p>
   	        </div>
-          	<iframe src="http://www.youtube.com/embed/nS9YT1IyU0A?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="small-12 large-6"></iframe>
+            <iframe src="https://www.youtube.com/embed/igmIn1UFVmk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="small-12 large-6"></iframe>
           </div>
         </section>
         <section id="resources">
-          <div class="row">
+          <div class="row resources-wrapper">
   	        <h2>Resources</h2>
   	        <p>Read more about RTM <br>or find out more about our RTMDx software.</p>
           	<div class="manuals small-12 medium-4 columns">
@@ -105,7 +97,7 @@
           </div>
         </section>
         <section id="in-practice" class="cf">
-          <div class="row">
+          <div class="row in-practice-wrapper">
           	<h2>RTM Users</h2>
           	<div class="rtm-users small-12">
           		<a href="http://www.nij.gov/topics/law-enforcement/strategies/predictive-policing/Pages/risk-terrain-modeling-for-allocating-resources.aspx"><img src="img/nypd_logo.png" alt="NYPD Logo"></a>
@@ -168,7 +160,7 @@
           </div>
         </section>
        </div>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="bower_components/foundation/js/foundation.min.js"></script>
       <script src="js/app.js"></script>
       <script src="js/main.js"></script>
