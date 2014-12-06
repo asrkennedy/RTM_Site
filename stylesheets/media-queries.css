@@ -2267,17 +2267,18 @@ nav ul li #mobile-menu:focus {
 /**SUPPORTERS**/
 /**************/
 .supporters-wrapper {
+  float: left;
   padding: 10px;
   width: 100vw;
-  text-align: right;
 }
 .supporters-wrapper h4 {
   float: left;
-  margin-right: 5%;
+  width: 100%;
+  margin: 5% 0;
 }
 
 .supporter {
-  width: 15%;
+  width: 25%;
   float: left;
 }
 .supporter img {
@@ -2286,6 +2287,11 @@ nav ul li #mobile-menu:focus {
   float: left;
   display: block;
   width: 50%;
+}
+
+.supporter-block {
+  float: left;
+  margin-bottom: 40px;
 }
 
 /**************/
@@ -2373,11 +2379,12 @@ main article {
 #gst-header article ol li {
   font-size: 1.3em;
   list-style: decimal;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
-#gst-header p.indented {
-  margin-left: 60px;
+#gst-header p.indented,
+#gst-header ol.indented {
+  margin-left: 40px;
 }
 
 #gst-header article p,
@@ -2538,10 +2545,6 @@ main article {
 }
 
 @media only screen and (max-width: 40em) {
-  html, body {
-    overflow-x: hidden;
-  }
-
   body {
     font-size: 70%;
   }
@@ -2619,6 +2622,11 @@ main article {
     border: 0;
     border-bottom: 1px solid #000;
     padding-bottom: 40px;
+  }
+
+  .supporter img {
+    margin: auto;
+    float: none;
   }
 }
 @media only screen {

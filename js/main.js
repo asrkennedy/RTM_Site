@@ -8,13 +8,13 @@ function animateScroll(clickedLink){
 
 function animateMobileScroll(clicked){
   var target = "#" + $(clicked).data('target');
-  $('body').animate({
+  $('html,body').animate({
         scrollTop: ($(target).offset().top) - $('#mobile-menu').height()
     }, 1000);
 }
 
 function makeScroll(target){
-  $('body').animate({
+  $('html,body').animate({
         scrollTop: ($(target).offset().top) - $('nav').height()
     }, 1000, function() {
       $(window).on('scroll', onScroll);
@@ -112,6 +112,8 @@ $(document).ready(function(){
       $('#map_canvas').css("pointer-events", "auto");
     });
 
+      $(document).on('scroll', onScroll);
+
   }
 
   //TRAINING PAGE
@@ -151,7 +153,5 @@ $(document).ready(function(){
       $('nav ul').slideUp();
     })
   }
-
-  $(document).on('scroll', onScroll);
   
 })

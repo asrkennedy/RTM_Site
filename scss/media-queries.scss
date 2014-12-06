@@ -4,10 +4,6 @@
 //iphone
 @media #{$small-only} {
 
-  html, body {
-    overflow-x: hidden;
-  }
-
   body {
     font-size: 70%;
   }
@@ -19,10 +15,6 @@
   .row {
     height: auto;
   }
-
-  // .hex-wrapper {
-  //   display: none;
-  // }
 
   .header-text {
     font-size: 60%;
@@ -91,9 +83,20 @@
     padding-bottom: $base-padding;
   }
 
+  .supporter {
+    img {
+      margin: auto;
+      float: none;
+    }
+  }
+
 } 
 
 @media #{$small-up} {
+
+  // html, body {
+  //   overflow-x: hidden;
+  // }
 
   #demos iframe {
   	margin-top: $base-margin;
@@ -187,6 +190,7 @@
 }
 
 @media #{$large-only} {
+
   body {
     font-size: 110%;
   }

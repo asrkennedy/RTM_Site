@@ -240,18 +240,18 @@
 /**************/
 
 .supporters-wrapper {
+  float: left;
   padding: 10px;
   width: $full-width;
-  text-align: right;
   h4 {
     float: left;
-    margin-right: 5%;
+    width: 100%;
+    margin: 5% 0;
   }
 }
 
-
 .supporter {
-  width: 15%;
+  width: 25%;
   float: left;
   img {
     max-width: 50px;
@@ -260,6 +260,11 @@
     display: block;
     width: 50%;
   }
+}
+
+.supporter-block {
+  float: left;
+  margin-bottom: $base-margin;
 }
 
 
@@ -354,12 +359,13 @@ main {
   ol li {
     font-size: $larger-base-font;
     list-style: decimal;
-    margin-left: $base-margin;
+    margin-left: 0.5*$base-margin;
   }
 }
 
-#gst-header p.indented {
-  margin-left: 1.5*($base-margin);
+#gst-header p.indented,
+#gst-header ol.indented {
+  margin-left: $base-margin;
 }
 
 #gst-header article p,
